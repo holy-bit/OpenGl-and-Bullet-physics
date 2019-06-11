@@ -17,7 +17,7 @@
     #include <glm/gtc/matrix_transform.hpp>         // translate, rotate, scale, perspective
     #include <glm/gtc/type_ptr.hpp>                 // value_ptr
 
-    namespace example
+    namespace glTools
     {
 
         class Camera

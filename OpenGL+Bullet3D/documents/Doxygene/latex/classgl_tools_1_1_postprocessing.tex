@@ -1,0 +1,101 @@
+\section{gl\+Tools\+::Postprocessing Class Reference}
+\label{classgl_tools_1_1_postprocessing}\index{glTools::Postprocessing@{glTools::Postprocessing}}
+
+
+{\ttfamily \#include $<$Postprocessing.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ setup\+Post\+Processing} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \textbf{ V\+AO}
+\item 
+unsigned int \textbf{ V\+BO}
+\item 
+unsigned int \textbf{ F\+BO}
+\item 
+unsigned int \textbf{ T\+BO}
+\item 
+unsigned int \textbf{ R\+BO}
+\item 
+shared\+\_\+ptr$<$ \textbf{ Shader\+\_\+\+Program} $>$ \textbf{ shader\+\_\+program}
+\item 
+float \textbf{ vertices} [24]
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{classgl_tools_1_1_postprocessing_a147b28dce0e13a179cc90bc7d42f8e28}} 
+\index{glTools::Postprocessing@{glTools::Postprocessing}!setupPostProcessing@{setupPostProcessing}}
+\index{setupPostProcessing@{setupPostProcessing}!glTools::Postprocessing@{glTools::Postprocessing}}
+\subsubsection{setupPostProcessing()}
+{\footnotesize\ttfamily void gl\+Tools\+::\+Postprocessing\+::setup\+Post\+Processing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\label{classgl_tools_1_1_postprocessing_a235f6418c0c0e8f79cad653e0c222b2a}} 
+\index{glTools::Postprocessing@{glTools::Postprocessing}!FBO@{FBO}}
+\index{FBO@{FBO}!glTools::Postprocessing@{glTools::Postprocessing}}
+\subsubsection{FBO}
+{\footnotesize\ttfamily unsigned int gl\+Tools\+::\+Postprocessing\+::\+F\+BO}
+
+\mbox{\label{classgl_tools_1_1_postprocessing_a88081bd4626c4071ebf75c61bcf466db}} 
+\index{glTools::Postprocessing@{glTools::Postprocessing}!RBO@{RBO}}
+\index{RBO@{RBO}!glTools::Postprocessing@{glTools::Postprocessing}}
+\subsubsection{RBO}
+{\footnotesize\ttfamily unsigned int gl\+Tools\+::\+Postprocessing\+::\+R\+BO}
+
+\mbox{\label{classgl_tools_1_1_postprocessing_a3316c3dd5830b99986d946074f1eb1d7}} 
+\index{glTools::Postprocessing@{glTools::Postprocessing}!shader\_program@{shader\_program}}
+\index{shader\_program@{shader\_program}!glTools::Postprocessing@{glTools::Postprocessing}}
+\subsubsection{shader\_program}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \textbf{ Shader\+\_\+\+Program} $>$ gl\+Tools\+::\+Postprocessing\+::shader\+\_\+program}
+
+\mbox{\label{classgl_tools_1_1_postprocessing_a25b02daf826c097693ad14c1ce23f7b6}} 
+\index{glTools::Postprocessing@{glTools::Postprocessing}!TBO@{TBO}}
+\index{TBO@{TBO}!glTools::Postprocessing@{glTools::Postprocessing}}
+\subsubsection{TBO}
+{\footnotesize\ttfamily unsigned int gl\+Tools\+::\+Postprocessing\+::\+T\+BO}
+
+\mbox{\label{classgl_tools_1_1_postprocessing_a3ef0dd184ca2cd789fe86b27ff443ed5}} 
+\index{glTools::Postprocessing@{glTools::Postprocessing}!VAO@{VAO}}
+\index{VAO@{VAO}!glTools::Postprocessing@{glTools::Postprocessing}}
+\subsubsection{VAO}
+{\footnotesize\ttfamily unsigned int gl\+Tools\+::\+Postprocessing\+::\+V\+AO}
+
+\mbox{\label{classgl_tools_1_1_postprocessing_a1503e80fb9c465f0d06fe635a334630b}} 
+\index{glTools::Postprocessing@{glTools::Postprocessing}!VBO@{VBO}}
+\index{VBO@{VBO}!glTools::Postprocessing@{glTools::Postprocessing}}
+\subsubsection{VBO}
+{\footnotesize\ttfamily unsigned int gl\+Tools\+::\+Postprocessing\+::\+V\+BO}
+
+\mbox{\label{classgl_tools_1_1_postprocessing_a100bcb9abc7c434d8bcf9243e9e990e5}} 
+\index{glTools::Postprocessing@{glTools::Postprocessing}!vertices@{vertices}}
+\index{vertices@{vertices}!glTools::Postprocessing@{glTools::Postprocessing}}
+\subsubsection{vertices}
+{\footnotesize\ttfamily float gl\+Tools\+::\+Postprocessing\+::vertices[24]}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{ }
+\DoxyCodeLine{}
+\DoxyCodeLine{            -1.0f,  1.0f,  0.0f, 1.0f,}
+\DoxyCodeLine{            -1.0f, -1.0f,  0.0f, 0.0f,}
+\DoxyCodeLine{            1.0f, -1.0f,  1.0f, 0.0f,}
+\DoxyCodeLine{}
+\DoxyCodeLine{            -1.0f,  1.0f,  0.0f, 1.0f,}
+\DoxyCodeLine{            1.0f, -1.0f,  1.0f, 0.0f,}
+\DoxyCodeLine{            1.0f,  1.0f,  1.0f, 1.0f}
+\DoxyCodeLine{        \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+code/headers/\textbf{ Postprocessing.\+hpp}\end{DoxyCompactItemize}

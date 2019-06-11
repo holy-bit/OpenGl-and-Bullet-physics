@@ -1,0 +1,188 @@
+\section{gl\+Tools\+::Camera Class Reference}
+\label{classgl_tools_1_1_camera}\index{glTools::Camera@{glTools::Camera}}
+
+
+{\ttfamily \#include $<$Camera.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Camera} (float ratio=1.f)
+\item 
+\textbf{ Camera} (float near\+\_\+z, float far\+\_\+z, float ratio=1.f)
+\item 
+\textbf{ Camera} (float fov, float near\+\_\+z, float far\+\_\+z, float ratio)
+\item 
+float \textbf{ get\+\_\+fov} () const
+\item 
+float \textbf{ get\+\_\+near\+\_\+z} () const
+\item 
+float \textbf{ get\+\_\+far\+\_\+z} () const
+\item 
+float \textbf{ get\+\_\+ratio} () const
+\item 
+const Point \& \textbf{ get\+\_\+location} () const
+\item 
+const Point \& \textbf{ get\+\_\+target} () const
+\item 
+const glm\+::vec3 \& \textbf{ get\+\_\+targetv3} () const
+\item 
+void \textbf{ set\+\_\+fov} (float new\+\_\+fov)
+\item 
+void \textbf{ set\+\_\+near\+\_\+z} (float new\+\_\+near\+\_\+z)
+\item 
+void \textbf{ set\+\_\+far\+\_\+z} (float new\+\_\+far\+\_\+z)
+\item 
+void \textbf{ set\+\_\+ratio} (float new\+\_\+ratio)
+\item 
+void \textbf{ set\+\_\+location} (float x, float y, float z)
+\item 
+void \textbf{ set\+\_\+target} (float x, float y, float z)
+\item 
+void \textbf{ reset} (float new\+\_\+fov, float new\+\_\+near\+\_\+z, float new\+\_\+far\+\_\+z, float new\+\_\+ratio)
+\item 
+void \textbf{ move} (const glm\+::vec3 \&translation)
+\item 
+void \textbf{ rotate} (const glm\+::mat4 \&rotation)
+\item 
+glm\+::mat4 \textbf{ get\+\_\+projection} () const
+\item 
+glm\+::mat4 \textbf{ get\+\_\+model\+\_\+view} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{classgl_tools_1_1_camera_ac2b07eeb97680b76381567ff36375bd3}} 
+\index{glTools::Camera@{glTools::Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!glTools::Camera@{glTools::Camera}}
+\subsubsection{Camera()\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily gl\+Tools\+::\+Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{float}]{ratio = {\ttfamily 1.f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classgl_tools_1_1_camera_ad5894652563f171e05148b0354a7526b}} 
+\index{glTools::Camera@{glTools::Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!glTools::Camera@{glTools::Camera}}
+\subsubsection{Camera()\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily gl\+Tools\+::\+Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{float}]{near\+\_\+z,  }\item[{float}]{far\+\_\+z,  }\item[{float}]{ratio = {\ttfamily 1.f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classgl_tools_1_1_camera_abd24b0ebcbf5e53c50ad65d7afda2b50}} 
+\index{glTools::Camera@{glTools::Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!glTools::Camera@{glTools::Camera}}
+\subsubsection{Camera()\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily gl\+Tools\+::\+Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{float}]{fov,  }\item[{float}]{near\+\_\+z,  }\item[{float}]{far\+\_\+z,  }\item[{float}]{ratio }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{classgl_tools_1_1_camera_ac5ac244038c871b6796dcaf64a8bd1fd}} 
+\index{glTools::Camera@{glTools::Camera}!get\_far\_z@{get\_far\_z}}
+\index{get\_far\_z@{get\_far\_z}!glTools::Camera@{glTools::Camera}}
+\subsubsection{get\_far\_z()}
+{\footnotesize\ttfamily float gl\+Tools\+::\+Camera\+::get\+\_\+far\+\_\+z (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classgl_tools_1_1_camera_a0e732db6f4de5b2c0dbdc43319260970}} 
+\index{glTools::Camera@{glTools::Camera}!get\_fov@{get\_fov}}
+\index{get\_fov@{get\_fov}!glTools::Camera@{glTools::Camera}}
+\subsubsection{get\_fov()}
+{\footnotesize\ttfamily float gl\+Tools\+::\+Camera\+::get\+\_\+fov (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classgl_tools_1_1_camera_a69b2b7b2b432de25f9e5f340d7885cf9}} 
+\index{glTools::Camera@{glTools::Camera}!get\_location@{get\_location}}
+\index{get\_location@{get\_location}!glTools::Camera@{glTools::Camera}}
+\subsubsection{get\_location()}
+{\footnotesize\ttfamily const Point\& gl\+Tools\+::\+Camera\+::get\+\_\+location (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classgl_tools_1_1_camera_ab559d77dc787283894da4b5f33a741ad}} 
+\index{glTools::Camera@{glTools::Camera}!get\_model\_view@{get\_model\_view}}
+\index{get\_model\_view@{get\_model\_view}!glTools::Camera@{glTools::Camera}}
+\subsubsection{get\_model\_view()}
+{\footnotesize\ttfamily glm\+::mat4 gl\+Tools\+::\+Camera\+::get\+\_\+model\+\_\+view (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classgl_tools_1_1_camera_a90be527017ebdd83e432d8f821cbf1b1}} 
+\index{glTools::Camera@{glTools::Camera}!get\_near\_z@{get\_near\_z}}
+\index{get\_near\_z@{get\_near\_z}!glTools::Camera@{glTools::Camera}}
+\subsubsection{get\_near\_z()}
+{\footnotesize\ttfamily float gl\+Tools\+::\+Camera\+::get\+\_\+near\+\_\+z (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classgl_tools_1_1_camera_ade0fce309eaabc2dc81f279809879d6a}} 
+\index{glTools::Camera@{glTools::Camera}!get\_projection@{get\_projection}}
+\index{get\_projection@{get\_projection}!glTools::Camera@{glTools::Camera}}
+\subsubsection{get\_projection()}
+{\footnotesize\ttfamily glm\+::mat4 gl\+Tools\+::\+Camera\+::get\+\_\+projection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classgl_tools_1_1_camera_aa14e819566ca6761316b0a3c07894d54}} 
+\index{glTools::Camera@{glTools::Camera}!get\_ratio@{get\_ratio}}
+\index{get\_ratio@{get\_ratio}!glTools::Camera@{glTools::Camera}}
+\subsubsection{get\_ratio()}
+{\footnotesize\ttfamily float gl\+Tools\+::\+Camera\+::get\+\_\+ratio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classgl_tools_1_1_camera_a97f9583a6d28b93dd10d30bd24676543}} 
+\index{glTools::Camera@{glTools::Camera}!get\_target@{get\_target}}
+\index{get\_target@{get\_target}!glTools::Camera@{glTools::Camera}}
+\subsubsection{get\_target()}
+{\footnotesize\ttfamily const Point\& gl\+Tools\+::\+Camera\+::get\+\_\+target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classgl_tools_1_1_camera_aa301c4d3a47208fc889180ed63d8d37d}} 
+\index{glTools::Camera@{glTools::Camera}!get\_targetv3@{get\_targetv3}}
+\index{get\_targetv3@{get\_targetv3}!glTools::Camera@{glTools::Camera}}
+\subsubsection{get\_targetv3()}
+{\footnotesize\ttfamily const glm\+::vec3\& gl\+Tools\+::\+Camera\+::get\+\_\+targetv3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classgl_tools_1_1_camera_a5a9d3eb54ff5c8c0a8a9dda69fc8cb0a}} 
+\index{glTools::Camera@{glTools::Camera}!move@{move}}
+\index{move@{move}!glTools::Camera@{glTools::Camera}}
+\subsubsection{move()}
+{\footnotesize\ttfamily void gl\+Tools\+::\+Camera\+::move (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{translation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classgl_tools_1_1_camera_a392615b968aaba5de76602b5cce7ea57}} 
+\index{glTools::Camera@{glTools::Camera}!reset@{reset}}
+\index{reset@{reset}!glTools::Camera@{glTools::Camera}}
+\subsubsection{reset()}
+{\footnotesize\ttfamily void gl\+Tools\+::\+Camera\+::reset (\begin{DoxyParamCaption}\item[{float}]{new\+\_\+fov,  }\item[{float}]{new\+\_\+near\+\_\+z,  }\item[{float}]{new\+\_\+far\+\_\+z,  }\item[{float}]{new\+\_\+ratio }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classgl_tools_1_1_camera_a20aed75dc4ab1d0e14f85dd256effc5c}} 
+\index{glTools::Camera@{glTools::Camera}!rotate@{rotate}}
+\index{rotate@{rotate}!glTools::Camera@{glTools::Camera}}
+\subsubsection{rotate()}
+{\footnotesize\ttfamily void gl\+Tools\+::\+Camera\+::rotate (\begin{DoxyParamCaption}\item[{const glm\+::mat4 \&}]{rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classgl_tools_1_1_camera_a402677a514a44b9bf2c6aa0bd32c2b7d}} 
+\index{glTools::Camera@{glTools::Camera}!set\_far\_z@{set\_far\_z}}
+\index{set\_far\_z@{set\_far\_z}!glTools::Camera@{glTools::Camera}}
+\subsubsection{set\_far\_z()}
+{\footnotesize\ttfamily void gl\+Tools\+::\+Camera\+::set\+\_\+far\+\_\+z (\begin{DoxyParamCaption}\item[{float}]{new\+\_\+far\+\_\+z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classgl_tools_1_1_camera_aba4738b5841fbfe8c310d2e2cfb161ff}} 
+\index{glTools::Camera@{glTools::Camera}!set\_fov@{set\_fov}}
+\index{set\_fov@{set\_fov}!glTools::Camera@{glTools::Camera}}
+\subsubsection{set\_fov()}
+{\footnotesize\ttfamily void gl\+Tools\+::\+Camera\+::set\+\_\+fov (\begin{DoxyParamCaption}\item[{float}]{new\+\_\+fov }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classgl_tools_1_1_camera_a802e84473e3b2aa28490745b2a3cb8ab}} 
+\index{glTools::Camera@{glTools::Camera}!set\_location@{set\_location}}
+\index{set\_location@{set\_location}!glTools::Camera@{glTools::Camera}}
+\subsubsection{set\_location()}
+{\footnotesize\ttfamily void gl\+Tools\+::\+Camera\+::set\+\_\+location (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classgl_tools_1_1_camera_a0f24b2117041e292e5b6201ce0cfa22c}} 
+\index{glTools::Camera@{glTools::Camera}!set\_near\_z@{set\_near\_z}}
+\index{set\_near\_z@{set\_near\_z}!glTools::Camera@{glTools::Camera}}
+\subsubsection{set\_near\_z()}
+{\footnotesize\ttfamily void gl\+Tools\+::\+Camera\+::set\+\_\+near\+\_\+z (\begin{DoxyParamCaption}\item[{float}]{new\+\_\+near\+\_\+z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classgl_tools_1_1_camera_a0e4413c8ecba241240408f66ef4f3232}} 
+\index{glTools::Camera@{glTools::Camera}!set\_ratio@{set\_ratio}}
+\index{set\_ratio@{set\_ratio}!glTools::Camera@{glTools::Camera}}
+\subsubsection{set\_ratio()}
+{\footnotesize\ttfamily void gl\+Tools\+::\+Camera\+::set\+\_\+ratio (\begin{DoxyParamCaption}\item[{float}]{new\+\_\+ratio }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classgl_tools_1_1_camera_ac47d3a72ec5121a45d5275b1f3464e87}} 
+\index{glTools::Camera@{glTools::Camera}!set\_target@{set\_target}}
+\index{set\_target@{set\_target}!glTools::Camera@{glTools::Camera}}
+\subsubsection{set\_target()}
+{\footnotesize\ttfamily void gl\+Tools\+::\+Camera\+::set\+\_\+target (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+code/headers/\textbf{ Camera.\+hpp}\end{DoxyCompactItemize}

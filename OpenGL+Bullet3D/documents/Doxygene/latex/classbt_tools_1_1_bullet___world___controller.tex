@@ -1,0 +1,109 @@
+\section{bt\+Tools\+::Bullet\+\_\+\+World\+\_\+\+Controller Class Reference}
+\label{classbt_tools_1_1_bullet___world___controller}\index{btTools::Bullet\_World\_Controller@{btTools::Bullet\_World\_Controller}}
+
+
+{\ttfamily \#include $<$Bullet\+\_\+\+World\+\_\+\+Controller.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ update} ()
+\begin{DoxyCompactList}\small\item\em Actualiza el mundo y a sus entidades. \end{DoxyCompactList}\item 
+void \textbf{ Create\+Entities} (map$<$ string, shared\+\_\+ptr$<$ \textbf{ Model} $>$$>$ \&models, int shape=\textbf{ B\+OX})
+\begin{DoxyCompactList}\small\item\em Crea las entidades para darle a los modelos colisiones y añadirlos al mundo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \textbf{ Bullet\+\_\+\+World\+\_\+\+Controller} \& \textbf{ get\+Instance} ()
+\begin{DoxyCompactList}\small\item\em Devuelve una referencia al singleton de controlador del mundo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, shared\+\_\+ptr$<$ \textbf{ Entity} $>$ $>$ \textbf{ entities}
+\item 
+shared\+\_\+ptr$<$ bt\+Discrete\+Dynamics\+World $>$ \textbf{ world}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{classbt_tools_1_1_bullet___world___controller_a788fa12114fe7274ec42f1e83d7c6451}} 
+\index{btTools::Bullet\_World\_Controller@{btTools::Bullet\_World\_Controller}!CreateEntities@{CreateEntities}}
+\index{CreateEntities@{CreateEntities}!btTools::Bullet\_World\_Controller@{btTools::Bullet\_World\_Controller}}
+\subsubsection{CreateEntities()}
+{\footnotesize\ttfamily void bt\+Tools\+::\+Bullet\+\_\+\+World\+\_\+\+Controller\+::\+Create\+Entities (\begin{DoxyParamCaption}\item[{map$<$ string, shared\+\_\+ptr$<$ \textbf{ Model} $>$$>$ \&}]{models,  }\item[{int}]{shape = {\ttfamily \textbf{ B\+OX}} }\end{DoxyParamCaption})}
+
+
+
+Crea las entidades para darle a los modelos colisiones y añadirlos al mundo. 
+
+{\bfseries{Method\+: }} Create\+Entities
+
+{\bfseries{Full\+Name\+:}} \doxyref{bt\+Tools\+::\+Bullet\+\_\+\+World\+\_\+\+Controller\+::\+Create\+Entities}{p.}{classbt_tools_1_1_bullet___world___controller_a788fa12114fe7274ec42f1e83d7c6451}
+
+{\bfseries{Access\+: }} public 
+\begin{DoxyParams}{Parameters}
+{\em map$<$string} & \\
+\hline
+{\em shared\+\_\+ptr$<$\+Model$>$$>$} & \& models \\
+\hline
+{\em int} & shape \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\label{classbt_tools_1_1_bullet___world___controller_a0206f9bc45bd552a313bbdaa99d30607}} 
+\index{btTools::Bullet\_World\_Controller@{btTools::Bullet\_World\_Controller}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!btTools::Bullet\_World\_Controller@{btTools::Bullet\_World\_Controller}}
+\subsubsection{getInstance()}
+{\footnotesize\ttfamily \textbf{ bt\+Tools\+::\+Bullet\+\_\+\+World\+\_\+\+Controller} \& bt\+Tools\+::\+Bullet\+\_\+\+World\+\_\+\+Controller\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Devuelve una referencia al singleton de controlador del mundo. 
+
+{\bfseries{Method\+: }} get\+Instance
+
+{\bfseries{Full\+Name\+:}} \doxyref{bt\+Tools\+::\+Bullet\+\_\+\+World\+\_\+\+Controller\+::get\+Instance}{p.}{classbt_tools_1_1_bullet___world___controller_a0206f9bc45bd552a313bbdaa99d30607}
+
+{\bfseries{Access\+: }} public static \begin{DoxyReturn}{Returns}
+\doxyref{bt\+Tools\+::\+Bullet\+\_\+\+World\+\_\+\+Controller}{p.}{classbt_tools_1_1_bullet___world___controller}\& 
+\end{DoxyReturn}
+\mbox{\label{classbt_tools_1_1_bullet___world___controller_a372f791e177a404d143f42e4997c0c0e}} 
+\index{btTools::Bullet\_World\_Controller@{btTools::Bullet\_World\_Controller}!update@{update}}
+\index{update@{update}!btTools::Bullet\_World\_Controller@{btTools::Bullet\_World\_Controller}}
+\subsubsection{update()}
+{\footnotesize\ttfamily void bt\+Tools\+::\+Bullet\+\_\+\+World\+\_\+\+Controller\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Actualiza el mundo y a sus entidades. 
+
+{\bfseries{Method\+: }} update
+
+{\bfseries{Full\+Name\+:}} \doxyref{bt\+Tools\+::\+Bullet\+\_\+\+World\+\_\+\+Controller\+::update}{p.}{classbt_tools_1_1_bullet___world___controller_a372f791e177a404d143f42e4997c0c0e}
+
+{\bfseries{Access\+: }} public \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\label{classbt_tools_1_1_bullet___world___controller_a686f7cbb2d790faab1f1251aa1f5ccde}} 
+\index{btTools::Bullet\_World\_Controller@{btTools::Bullet\_World\_Controller}!entities@{entities}}
+\index{entities@{entities}!btTools::Bullet\_World\_Controller@{btTools::Bullet\_World\_Controller}}
+\subsubsection{entities}
+{\footnotesize\ttfamily map$<$string, shared\+\_\+ptr$<$\textbf{ Entity}$>$ $>$ bt\+Tools\+::\+Bullet\+\_\+\+World\+\_\+\+Controller\+::entities}
+
+Entidades del mundo. \mbox{\label{classbt_tools_1_1_bullet___world___controller_aaccec69189c0ab252a56b941d2c8352b}} 
+\index{btTools::Bullet\_World\_Controller@{btTools::Bullet\_World\_Controller}!world@{world}}
+\index{world@{world}!btTools::Bullet\_World\_Controller@{btTools::Bullet\_World\_Controller}}
+\subsubsection{world}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ bt\+Discrete\+Dynamics\+World $>$ bt\+Tools\+::\+Bullet\+\_\+\+World\+\_\+\+Controller\+::world}
+
+Puntero al mundo dinamico. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+code/headers/\textbf{ Bullet\+\_\+\+World\+\_\+\+Controller.\+hpp}\item 
+code/headers/\textbf{ Bullet\+\_\+\+World\+\_\+\+Controller.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,17 @@
+//Catapulta controles: W,A,S,D
+	    Disparo con barra espaciadora
+
+//Camara controles: Flechas de control
+
+
+Todo el codigo esta comentado y es autoexplicativo a mi parecer, tambien he hecho 
+documentacion de Doxygene
+
+Los modelos 3D que se cargan son .obj con ellos se crea tantas mesh como sea necesario y se añaden a un model. 
+Los modelos que tengan colisiones se asignan a unas entities encontradas en el Bullet_world_controller creandoles unas colisiones en el
+mundo dinamico. 
+Estas entidades controlan mediante físicas la ubicación de los modelos gráficos.
+el vehiculo son varias entities unidas mediante hinges al igual que el brazo de la palanca, su movimiento de giro 
+se hace girando las ruedas de cada lado en sentidos contrarios para que asi lo haga sobre su propio eje.
+
+

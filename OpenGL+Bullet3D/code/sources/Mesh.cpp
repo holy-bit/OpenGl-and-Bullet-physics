@@ -1,12 +1,12 @@
 ﻿/////////////////////////////
 	//Author: Luis Chamarro Alonso
-	//Date: 15/02/2019
+	//Date: 25/05/2019
 	//Videojuegos-Esne: 4.3
 
 #include "Mesh.hpp"
 
   
-namespace example
+namespace glTools
 {
 
 	Mesh::Mesh(vector<Vertex> vertices, vector<unsigned int> indices, const string& texture_path)
@@ -16,13 +16,11 @@ namespace example
 		if (texture_path != "")
 		{
 			texture = load_texture(texture_path);
-
 			has_texture = texture.get() != 0;
-
-
 		}
+
 		this->vertices = vertices;
-		this->indices = indices;
+		this->indices  = indices;
 
 		setupMesh();
 	}
@@ -65,7 +63,7 @@ namespace example
 			glGenTextures(1, &texture_id);
 			glBindTexture(GL_TEXTURE_2D, texture_id);
 
-			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);	// set texture wrapping to GL_REPEAT (default wrapping method)
+			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
@@ -89,10 +87,6 @@ namespace example
 
 	void Mesh::Draw()
 	{
-		
-			
-		// draw mesh
-		
 		if (has_texture)
 		{
 			glEnable(GL_TEXTURE_2D);
@@ -102,7 +96,6 @@ namespace example
 		glBindVertexArray(VAO);
 		glDrawElements(GL_TRIANGLES, indices.size(), GL_UNSIGNED_INT, 0);
 		glBindVertexArray(0);
-		//glDisable(GL_BLEND);
 	}
 
 }

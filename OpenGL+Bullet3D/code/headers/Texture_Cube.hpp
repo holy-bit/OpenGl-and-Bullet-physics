@@ -18,7 +18,7 @@
     #include <SFML/OpenGL.hpp>
     #include "Color_Buffer_Rgba8888.hpp"
 
-    namespace example
+    namespace glTools
     {
 
         class Texture_Cube

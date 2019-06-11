@@ -1,0 +1,87 @@
+\section{gl\+Tools Namespace Reference}
+\label{namespacegl_tools}\index{glTools@{glTools}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \textbf{ Camera}
+\item 
+class \textbf{ Color\+\_\+\+Buffer}
+\item 
+class \textbf{ Color\+\_\+\+Buffer\+\_\+\+Rgba8888}
+\item 
+class \textbf{ Cube}
+\item 
+class \textbf{ Fragment\+\_\+\+Shader}
+\item 
+class \textbf{ Mesh}
+\item 
+class \textbf{ Model}
+\item 
+class \textbf{ Obj\+\_\+\+Loader}
+\item 
+class \textbf{ Postprocessing}
+\item 
+class \textbf{ Scene}
+\item 
+class \textbf{ Shader}
+\item 
+class \textbf{ Shader\+\_\+\+Program}
+\item 
+class \textbf{ Skybox}
+\item 
+class \textbf{ Texture\+\_\+\+Cube}
+\item 
+class \textbf{ Vertex\+\_\+\+Shader}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \textbf{ Color\+\_\+\+Buffer\+\_\+\+Rgba8888} \textbf{ Buffer}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const string \textbf{ vertex\+\_\+shader\+\_\+code}
+\item 
+const string \textbf{ fragment\+\_\+shader\+\_\+code}
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\label{namespacegl_tools_a0fecc1dfa30719083b597f2226a1e1fb}} 
+\index{glTools@{glTools}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!glTools@{glTools}}
+\subsubsection{Buffer}
+{\footnotesize\ttfamily typedef \textbf{ Color\+\_\+\+Buffer\+\_\+\+Rgba8888} \textbf{ gl\+Tools\+::\+Buffer}}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\label{namespacegl_tools_a687a93581930cd9369388953074e0936}} 
+\index{glTools@{glTools}!fragment\_shader\_code@{fragment\_shader\_code}}
+\index{fragment\_shader\_code@{fragment\_shader\_code}!glTools@{glTools}}
+\subsubsection{fragment\_shader\_code}
+{\footnotesize\ttfamily const string gl\+Tools\+::fragment\+\_\+shader\+\_\+code}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{stringliteral}{"\#version 330\(\backslash\)n"}}
+\DoxyCodeLine{        \textcolor{stringliteral}{""}}
+\DoxyCodeLine{        \textcolor{stringliteral}{"in vec2 tex\_coords2; "}}
+\DoxyCodeLine{        \textcolor{stringliteral}{"in  vec3    front\_color;"}}
+\DoxyCodeLine{        \textcolor{stringliteral}{"uniform sampler2D sampler2d;"}}
+\DoxyCodeLine{        \textcolor{stringliteral}{""}}
+\DoxyCodeLine{        \textcolor{stringliteral}{"void main()"}}
+\DoxyCodeLine{        \textcolor{stringliteral}{"\{"}}
+\DoxyCodeLine{        \textcolor{stringliteral}{"    gl\_FragColor = texture2D(sampler2d, tex\_coords2) * vec4(front\_color, 1);"}}
+\DoxyCodeLine{        \textcolor{stringliteral}{"\}"}}
+
+\end{DoxyCode}
+\mbox{\label{namespacegl_tools_a49541d59878abb99f430f379f6e8050d}} 
+\index{glTools@{glTools}!vertex\_shader\_code@{vertex\_shader\_code}}
+\index{vertex\_shader\_code@{vertex\_shader\_code}!glTools@{glTools}}
+\subsubsection{vertex\_shader\_code}
+{\footnotesize\ttfamily const string gl\+Tools\+::vertex\+\_\+shader\+\_\+code}
+

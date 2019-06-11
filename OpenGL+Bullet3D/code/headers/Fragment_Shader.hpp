@@ -17,7 +17,7 @@
 
     #include "Shader.hpp"
 
-    namespace example
+    namespace glTools
     {
 
         class Fragment_Shader : public Shader

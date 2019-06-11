@@ -1,0 +1,154 @@
+\section{gl\+Tools\+::Mesh Class Reference}
+\label{classgl_tools_1_1_mesh}\index{glTools::Mesh@{glTools::Mesh}}
+
+
+{\ttfamily \#include $<$Mesh.\+hpp$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ Vertex}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Mesh} (vector$<$ \textbf{ Vertex} $>$ \textbf{ vertices}, vector$<$ unsigned int $>$ \textbf{ indices}, const string \&texture\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Crea la malla. \end{DoxyCompactList}\item 
+void \textbf{ setup\+Mesh} ()
+\begin{DoxyCompactList}\small\item\em Carga todos los datos de la malla a Open\+GL. \end{DoxyCompactList}\item 
+void \textbf{ Draw} ()
+\begin{DoxyCompactList}\small\item\em Dibuja la malla. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \textbf{ Texture} $>$ \textbf{ load\+\_\+texture} (const std\+::string \&texture\+\_\+path)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \textbf{ Vertex} $>$ \textbf{ vertices}
+\item 
+vector$<$ unsigned int $>$ \textbf{ indices}
+\item 
+unsigned int \textbf{ V\+AO}
+\item 
+std\+::shared\+\_\+ptr$<$ \textbf{ Texture} $>$ \textbf{ texture}
+\item 
+bool \textbf{ has\+\_\+texture}
+\item 
+G\+Luint \textbf{ texture\+\_\+id}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{classgl_tools_1_1_mesh_aa648e9955543e334809c56081efd0d93}} 
+\index{glTools::Mesh@{glTools::Mesh}!Mesh@{Mesh}}
+\index{Mesh@{Mesh}!glTools::Mesh@{glTools::Mesh}}
+\subsubsection{Mesh()}
+{\footnotesize\ttfamily gl\+Tools\+::\+Mesh\+::\+Mesh (\begin{DoxyParamCaption}\item[{vector$<$ \textbf{ Vertex} $>$}]{vertices,  }\item[{vector$<$ unsigned int $>$}]{indices,  }\item[{const string \&}]{texture\+\_\+path }\end{DoxyParamCaption})}
+
+
+
+Crea la malla. 
+
+{\bfseries{Method\+: }} \doxyref{Mesh}{p.}{classgl_tools_1_1_mesh}
+
+{\bfseries{Full\+Name\+:}} \doxyref{gl\+Tools\+::\+Mesh\+::\+Mesh}{p.}{classgl_tools_1_1_mesh_aa648e9955543e334809c56081efd0d93}
+
+{\bfseries{Access\+: }} public 
+\begin{DoxyParams}{Parameters}
+{\em vector$<$\+Vertex$>$} & vertices \\
+\hline
+{\em vector$<$unsigned} & int$>$ indices \\
+\hline
+{\em const} & string \& texture\+\_\+path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{classgl_tools_1_1_mesh_a26b78a53207e1db1aa2dd53a99d4205f}} 
+\index{glTools::Mesh@{glTools::Mesh}!Draw@{Draw}}
+\index{Draw@{Draw}!glTools::Mesh@{glTools::Mesh}}
+\subsubsection{Draw()}
+{\footnotesize\ttfamily void gl\+Tools\+::\+Mesh\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Dibuja la malla. 
+
+{\bfseries{Method\+: }} Draw
+
+{\bfseries{Full\+Name\+:}} \doxyref{gl\+Tools\+::\+Mesh\+::\+Draw}{p.}{classgl_tools_1_1_mesh_a26b78a53207e1db1aa2dd53a99d4205f}
+
+{\bfseries{Access\+: }} public \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\label{classgl_tools_1_1_mesh_a2419607ac1ac702e86ed064af233c714}} 
+\index{glTools::Mesh@{glTools::Mesh}!load\_texture@{load\_texture}}
+\index{load\_texture@{load\_texture}!glTools::Mesh@{glTools::Mesh}}
+\subsubsection{load\_texture()}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \textbf{ Texture} $>$ gl\+Tools\+::\+Mesh\+::load\+\_\+texture (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{texture\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classgl_tools_1_1_mesh_ae2c33fea17ed5e4ff4292263b1590868}} 
+\index{glTools::Mesh@{glTools::Mesh}!setupMesh@{setupMesh}}
+\index{setupMesh@{setupMesh}!glTools::Mesh@{glTools::Mesh}}
+\subsubsection{setupMesh()}
+{\footnotesize\ttfamily void gl\+Tools\+::\+Mesh\+::setup\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Carga todos los datos de la malla a Open\+GL. 
+
+{\bfseries{Method\+: }} setup\+Mesh
+
+{\bfseries{Full\+Name\+:}} \doxyref{gl\+Tools\+::\+Mesh\+::setup\+Mesh}{p.}{classgl_tools_1_1_mesh_ae2c33fea17ed5e4ff4292263b1590868}
+
+{\bfseries{Access\+: }} public \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\label{classgl_tools_1_1_mesh_af9368c4aa8faeb4f06efc9fc9ddd356b}} 
+\index{glTools::Mesh@{glTools::Mesh}!has\_texture@{has\_texture}}
+\index{has\_texture@{has\_texture}!glTools::Mesh@{glTools::Mesh}}
+\subsubsection{has\_texture}
+{\footnotesize\ttfamily bool gl\+Tools\+::\+Mesh\+::has\+\_\+texture}
+
+\mbox{\label{classgl_tools_1_1_mesh_ac763c9c04895bc4b8c7a352e2b202762}} 
+\index{glTools::Mesh@{glTools::Mesh}!indices@{indices}}
+\index{indices@{indices}!glTools::Mesh@{glTools::Mesh}}
+\subsubsection{indices}
+{\footnotesize\ttfamily vector$<$unsigned int$>$ gl\+Tools\+::\+Mesh\+::indices}
+
+\mbox{\label{classgl_tools_1_1_mesh_a4641f338f8a9aaa8291aba4ee6be5780}} 
+\index{glTools::Mesh@{glTools::Mesh}!texture@{texture}}
+\index{texture@{texture}!glTools::Mesh@{glTools::Mesh}}
+\subsubsection{texture}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \textbf{ Texture} $>$ gl\+Tools\+::\+Mesh\+::texture}
+
+\mbox{\label{classgl_tools_1_1_mesh_a95ded88235a2464c105dca2e0c3ddde8}} 
+\index{glTools::Mesh@{glTools::Mesh}!texture\_id@{texture\_id}}
+\index{texture\_id@{texture\_id}!glTools::Mesh@{glTools::Mesh}}
+\subsubsection{texture\_id}
+{\footnotesize\ttfamily G\+Luint gl\+Tools\+::\+Mesh\+::texture\+\_\+id}
+
+\mbox{\label{classgl_tools_1_1_mesh_a488b8b7465293beeea8e314353a7b1ba}} 
+\index{glTools::Mesh@{glTools::Mesh}!VAO@{VAO}}
+\index{VAO@{VAO}!glTools::Mesh@{glTools::Mesh}}
+\subsubsection{VAO}
+{\footnotesize\ttfamily unsigned int gl\+Tools\+::\+Mesh\+::\+V\+AO}
+
+\mbox{\label{classgl_tools_1_1_mesh_a6839b5c01fb3db14b6f7326634bdacf1}} 
+\index{glTools::Mesh@{glTools::Mesh}!vertices@{vertices}}
+\index{vertices@{vertices}!glTools::Mesh@{glTools::Mesh}}
+\subsubsection{vertices}
+{\footnotesize\ttfamily vector$<$\textbf{ Vertex}$>$ gl\+Tools\+::\+Mesh\+::vertices}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+code/headers/\textbf{ Mesh.\+hpp}\item 
+code/sources/\textbf{ Mesh.\+cpp}\end{DoxyCompactItemize}

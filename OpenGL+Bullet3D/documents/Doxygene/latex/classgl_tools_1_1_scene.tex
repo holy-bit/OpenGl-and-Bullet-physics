@@ -1,0 +1,303 @@
+\section{gl\+Tools\+::Scene Class Reference}
+\label{classgl_tools_1_1_scene}\index{glTools::Scene@{glTools::Scene}}
+
+
+{\ttfamily \#include $<$Scene.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Scene} (int \textbf{ width}, int \textbf{ height})
+\item 
+void \textbf{ update} ()
+\begin{DoxyCompactList}\small\item\em Actualizacion de la escena. \end{DoxyCompactList}\item 
+void \textbf{ render} ()
+\begin{DoxyCompactList}\small\item\em Dibujado de la escena. \end{DoxyCompactList}\item 
+void \textbf{ resize} (int \textbf{ width}, int \textbf{ height})
+\begin{DoxyCompactList}\small\item\em Redimendimensionar la escena respecto al tamaño de la ventana. \end{DoxyCompactList}\item 
+void \textbf{ on\+\_\+key} ()
+\begin{DoxyCompactList}\small\item\em Evento al pulsar una tecla. \end{DoxyCompactList}\item 
+void \textbf{ on\+\_\+drag} (int pointer\+\_\+x, int pointer\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Al arrastrar el raton haciendo click. \end{DoxyCompactList}\item 
+void \textbf{ on\+\_\+click} (int pointer\+\_\+x, int pointer\+\_\+y, bool down)
+\begin{DoxyCompactList}\small\item\em Evento al hacer click con el raton. \end{DoxyCompactList}\item 
+void \textbf{ on\+\_\+key\+\_\+realeased} ()
+\begin{DoxyCompactList}\small\item\em Evento al dejar de pulsar una tecla. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, shared\+\_\+ptr$<$ \textbf{ Model} $>$ $>$ \textbf{ models}
+\item 
+shared\+\_\+ptr$<$ \textbf{ Vehicle} $>$ \textbf{ vehicle}
+\item 
+float \textbf{ angle}
+\item 
+int \textbf{ width}
+\item 
+int \textbf{ height}
+\item 
+float \textbf{ angle\+\_\+around\+\_\+x}
+\item 
+float \textbf{ angle\+\_\+around\+\_\+y}
+\item 
+float \textbf{ angle\+\_\+delta\+\_\+x}
+\item 
+float \textbf{ angle\+\_\+delta\+\_\+y}
+\item 
+bool \textbf{ pointer\+\_\+pressed}
+\item 
+int \textbf{ last\+\_\+pointer\+\_\+x}
+\item 
+int \textbf{ last\+\_\+pointer\+\_\+y}
+\item 
+glm\+::vec3 \textbf{ front} \{0,0,1\}
+\item 
+glm\+::vec3 \textbf{ direction}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{classgl_tools_1_1_scene_aa8faedfac31c7c0b4eeddeb75088eab8}} 
+\index{glTools::Scene@{glTools::Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!glTools::Scene@{glTools::Scene}}
+\subsubsection{Scene()}
+{\footnotesize\ttfamily gl\+Tools\+::\+Scene\+::\+Scene (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{classgl_tools_1_1_scene_aeb32b909877f156759f28ffb49edcaf5}} 
+\index{glTools::Scene@{glTools::Scene}!on\_click@{on\_click}}
+\index{on\_click@{on\_click}!glTools::Scene@{glTools::Scene}}
+\subsubsection{on\_click()}
+{\footnotesize\ttfamily void gl\+Tools\+::\+Scene\+::on\+\_\+click (\begin{DoxyParamCaption}\item[{int}]{pointer\+\_\+x,  }\item[{int}]{pointer\+\_\+y,  }\item[{bool}]{down }\end{DoxyParamCaption})}
+
+
+
+Evento al hacer click con el raton. 
+
+{\bfseries{Method\+: }} on\+\_\+click
+
+{\bfseries{Full\+Name\+:}} \doxyref{gl\+Tools\+::\+Scene\+::on\+\_\+click}{p.}{classgl_tools_1_1_scene_aeb32b909877f156759f28ffb49edcaf5}
+
+{\bfseries{Access\+: }} public 
+\begin{DoxyParams}{Parameters}
+{\em int} & pointer\+\_\+x \\
+\hline
+{\em int} & pointer\+\_\+y \\
+\hline
+{\em bool} & down \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\label{classgl_tools_1_1_scene_a08c449b4cdf0c5d6ee29e8b09780895c}} 
+\index{glTools::Scene@{glTools::Scene}!on\_drag@{on\_drag}}
+\index{on\_drag@{on\_drag}!glTools::Scene@{glTools::Scene}}
+\subsubsection{on\_drag()}
+{\footnotesize\ttfamily void gl\+Tools\+::\+Scene\+::on\+\_\+drag (\begin{DoxyParamCaption}\item[{int}]{pointer\+\_\+x,  }\item[{int}]{pointer\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+Al arrastrar el raton haciendo click. 
+
+{\bfseries{Method\+: }} on\+\_\+drag
+
+{\bfseries{Full\+Name\+:}} \doxyref{gl\+Tools\+::\+Scene\+::on\+\_\+drag}{p.}{classgl_tools_1_1_scene_a08c449b4cdf0c5d6ee29e8b09780895c}
+
+{\bfseries{Access\+: }} public 
+\begin{DoxyParams}{Parameters}
+{\em int} & pointer\+\_\+x \\
+\hline
+{\em int} & pointer\+\_\+y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\label{classgl_tools_1_1_scene_abf30a6e51243990a6ce80a1b83b30604}} 
+\index{glTools::Scene@{glTools::Scene}!on\_key@{on\_key}}
+\index{on\_key@{on\_key}!glTools::Scene@{glTools::Scene}}
+\subsubsection{on\_key()}
+{\footnotesize\ttfamily void gl\+Tools\+::\+Scene\+::on\+\_\+key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Evento al pulsar una tecla. 
+
+{\bfseries{Method\+: }} on\+\_\+key
+
+{\bfseries{Full\+Name\+:}} \doxyref{gl\+Tools\+::\+Scene\+::on\+\_\+key}{p.}{classgl_tools_1_1_scene_abf30a6e51243990a6ce80a1b83b30604}
+
+{\bfseries{Access\+: }} public \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\label{classgl_tools_1_1_scene_ac3fde3ba655f248aa929b483dfc62f16}} 
+\index{glTools::Scene@{glTools::Scene}!on\_key\_realeased@{on\_key\_realeased}}
+\index{on\_key\_realeased@{on\_key\_realeased}!glTools::Scene@{glTools::Scene}}
+\subsubsection{on\_key\_realeased()}
+{\footnotesize\ttfamily void gl\+Tools\+::\+Scene\+::on\+\_\+key\+\_\+realeased (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Evento al dejar de pulsar una tecla. 
+
+{\bfseries{Method\+: }} on\+\_\+key\+\_\+realeased
+
+{\bfseries{Full\+Name\+:}} \doxyref{gl\+Tools\+::\+Scene\+::on\+\_\+key\+\_\+realeased}{p.}{classgl_tools_1_1_scene_ac3fde3ba655f248aa929b483dfc62f16}
+
+{\bfseries{Access\+: }} public \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\label{classgl_tools_1_1_scene_ae1f75cf8b8116621e5691e330a729567}} 
+\index{glTools::Scene@{glTools::Scene}!render@{render}}
+\index{render@{render}!glTools::Scene@{glTools::Scene}}
+\subsubsection{render()}
+{\footnotesize\ttfamily void gl\+Tools\+::\+Scene\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Dibujado de la escena. 
+
+{\bfseries{Method\+: }} render
+
+{\bfseries{Full\+Name\+:}} \doxyref{gl\+Tools\+::\+Scene\+::render}{p.}{classgl_tools_1_1_scene_ae1f75cf8b8116621e5691e330a729567}
+
+{\bfseries{Access\+: }} public \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\label{classgl_tools_1_1_scene_a26044cfb9099dd94a062c1463ed7bc62}} 
+\index{glTools::Scene@{glTools::Scene}!resize@{resize}}
+\index{resize@{resize}!glTools::Scene@{glTools::Scene}}
+\subsubsection{resize()}
+{\footnotesize\ttfamily void gl\+Tools\+::\+Scene\+::resize (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+Redimendimensionar la escena respecto al tamaño de la ventana. 
+
+{\bfseries{Method\+: }} resize
+
+{\bfseries{Full\+Name\+:}} \doxyref{gl\+Tools\+::\+Scene\+::resize}{p.}{classgl_tools_1_1_scene_a26044cfb9099dd94a062c1463ed7bc62}
+
+{\bfseries{Access\+: }} public 
+\begin{DoxyParams}{Parameters}
+{\em int} & width \\
+\hline
+{\em int} & height \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\label{classgl_tools_1_1_scene_a0153fa0a399dcfc370ee59a36cba4fab}} 
+\index{glTools::Scene@{glTools::Scene}!update@{update}}
+\index{update@{update}!glTools::Scene@{glTools::Scene}}
+\subsubsection{update()}
+{\footnotesize\ttfamily void gl\+Tools\+::\+Scene\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Actualizacion de la escena. 
+
+{\bfseries{Method\+: }} update
+
+{\bfseries{Full\+Name\+:}} \doxyref{gl\+Tools\+::\+Scene\+::update}{p.}{classgl_tools_1_1_scene_a0153fa0a399dcfc370ee59a36cba4fab}
+
+{\bfseries{Access\+: }} public \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\label{classgl_tools_1_1_scene_a538aed28850c6c2e1ce30ff84474eabe}} 
+\index{glTools::Scene@{glTools::Scene}!angle@{angle}}
+\index{angle@{angle}!glTools::Scene@{glTools::Scene}}
+\subsubsection{angle}
+{\footnotesize\ttfamily float gl\+Tools\+::\+Scene\+::angle}
+
+angulo de giro que se incrementa en el tiempo \mbox{\label{classgl_tools_1_1_scene_a5b30424d912829b5f08be6dc9bb9b549}} 
+\index{glTools::Scene@{glTools::Scene}!angle\_around\_x@{angle\_around\_x}}
+\index{angle\_around\_x@{angle\_around\_x}!glTools::Scene@{glTools::Scene}}
+\subsubsection{angle\_around\_x}
+{\footnotesize\ttfamily float gl\+Tools\+::\+Scene\+::angle\+\_\+around\+\_\+x}
+
+\mbox{\label{classgl_tools_1_1_scene_ac6bdd4e157e884f3dcec48b0f32ae46b}} 
+\index{glTools::Scene@{glTools::Scene}!angle\_around\_y@{angle\_around\_y}}
+\index{angle\_around\_y@{angle\_around\_y}!glTools::Scene@{glTools::Scene}}
+\subsubsection{angle\_around\_y}
+{\footnotesize\ttfamily float gl\+Tools\+::\+Scene\+::angle\+\_\+around\+\_\+y}
+
+\mbox{\label{classgl_tools_1_1_scene_a5340655f96f523ffad140e7326c6003c}} 
+\index{glTools::Scene@{glTools::Scene}!angle\_delta\_x@{angle\_delta\_x}}
+\index{angle\_delta\_x@{angle\_delta\_x}!glTools::Scene@{glTools::Scene}}
+\subsubsection{angle\_delta\_x}
+{\footnotesize\ttfamily float gl\+Tools\+::\+Scene\+::angle\+\_\+delta\+\_\+x}
+
+\mbox{\label{classgl_tools_1_1_scene_a6f53112460e31825bd3e720accea18e9}} 
+\index{glTools::Scene@{glTools::Scene}!angle\_delta\_y@{angle\_delta\_y}}
+\index{angle\_delta\_y@{angle\_delta\_y}!glTools::Scene@{glTools::Scene}}
+\subsubsection{angle\_delta\_y}
+{\footnotesize\ttfamily float gl\+Tools\+::\+Scene\+::angle\+\_\+delta\+\_\+y}
+
+\mbox{\label{classgl_tools_1_1_scene_a1b006f943f4034dfe37ee97a647ec89f}} 
+\index{glTools::Scene@{glTools::Scene}!direction@{direction}}
+\index{direction@{direction}!glTools::Scene@{glTools::Scene}}
+\subsubsection{direction}
+{\footnotesize\ttfamily glm\+::vec3 gl\+Tools\+::\+Scene\+::direction}
+
+\mbox{\label{classgl_tools_1_1_scene_a39087fb2640241c37895309a8173d600}} 
+\index{glTools::Scene@{glTools::Scene}!front@{front}}
+\index{front@{front}!glTools::Scene@{glTools::Scene}}
+\subsubsection{front}
+{\footnotesize\ttfamily glm\+::vec3 gl\+Tools\+::\+Scene\+::front \{0,0,1\}}
+
+\mbox{\label{classgl_tools_1_1_scene_a5ad1a10066cd75a4ee10e4176f1de068}} 
+\index{glTools::Scene@{glTools::Scene}!height@{height}}
+\index{height@{height}!glTools::Scene@{glTools::Scene}}
+\subsubsection{height}
+{\footnotesize\ttfamily int gl\+Tools\+::\+Scene\+::height}
+
+Altura de la ventana \mbox{\label{classgl_tools_1_1_scene_addb5591b79c2f6f55b2151e9ae3f3819}} 
+\index{glTools::Scene@{glTools::Scene}!last\_pointer\_x@{last\_pointer\_x}}
+\index{last\_pointer\_x@{last\_pointer\_x}!glTools::Scene@{glTools::Scene}}
+\subsubsection{last\_pointer\_x}
+{\footnotesize\ttfamily int gl\+Tools\+::\+Scene\+::last\+\_\+pointer\+\_\+x}
+
+\mbox{\label{classgl_tools_1_1_scene_aba533e49f697fb0a505b1895d57f3dae}} 
+\index{glTools::Scene@{glTools::Scene}!last\_pointer\_y@{last\_pointer\_y}}
+\index{last\_pointer\_y@{last\_pointer\_y}!glTools::Scene@{glTools::Scene}}
+\subsubsection{last\_pointer\_y}
+{\footnotesize\ttfamily int gl\+Tools\+::\+Scene\+::last\+\_\+pointer\+\_\+y}
+
+\mbox{\label{classgl_tools_1_1_scene_a85d722713799cf369d94bb51acb94d7f}} 
+\index{glTools::Scene@{glTools::Scene}!models@{models}}
+\index{models@{models}!glTools::Scene@{glTools::Scene}}
+\subsubsection{models}
+{\footnotesize\ttfamily map$<$string, shared\+\_\+ptr$<$\textbf{ Model}$>$ $>$ gl\+Tools\+::\+Scene\+::models}
+
+Lista de los modelos en la escena \mbox{\label{classgl_tools_1_1_scene_abe8e208ab93bdca415c6d91752dcee77}} 
+\index{glTools::Scene@{glTools::Scene}!pointer\_pressed@{pointer\_pressed}}
+\index{pointer\_pressed@{pointer\_pressed}!glTools::Scene@{glTools::Scene}}
+\subsubsection{pointer\_pressed}
+{\footnotesize\ttfamily bool gl\+Tools\+::\+Scene\+::pointer\+\_\+pressed}
+
+\mbox{\label{classgl_tools_1_1_scene_ae80cf454e16a7290985ee751c01145bc}} 
+\index{glTools::Scene@{glTools::Scene}!vehicle@{vehicle}}
+\index{vehicle@{vehicle}!glTools::Scene@{glTools::Scene}}
+\subsubsection{vehicle}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$\textbf{ Vehicle}$>$ gl\+Tools\+::\+Scene\+::vehicle}
+
+Vehiculo que controla el juegador \mbox{\label{classgl_tools_1_1_scene_a7498a5b2cacf6a995ec9e40db831880b}} 
+\index{glTools::Scene@{glTools::Scene}!width@{width}}
+\index{width@{width}!glTools::Scene@{glTools::Scene}}
+\subsubsection{width}
+{\footnotesize\ttfamily int gl\+Tools\+::\+Scene\+::width}
+
+Ancho de la ventana 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+code/headers/\textbf{ Scene.\+hpp}\item 
+code/sources/\textbf{ Scene.\+cpp}\end{DoxyCompactItemize}

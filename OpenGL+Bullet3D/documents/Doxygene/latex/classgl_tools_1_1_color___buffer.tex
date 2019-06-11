@@ -1,0 +1,140 @@
+\section{gl\+Tools\+::Color\+\_\+\+Buffer Class Reference}
+\label{classgl_tools_1_1_color___buffer}\index{glTools::Color\_Buffer@{glTools::Color\_Buffer}}
+
+
+{\ttfamily \#include $<$Color\+\_\+\+Buffer.\+hpp$>$}
+
+Inheritance diagram for gl\+Tools\+::Color\+\_\+\+Buffer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgl_tools_1_1_color___buffer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Color\+\_\+\+Buffer} (size\+\_\+t \textbf{ width}, size\+\_\+t \textbf{ height})
+\item 
+size\+\_\+t \textbf{ get\+\_\+width} () const
+\item 
+size\+\_\+t \textbf{ get\+\_\+height} () const
+\item 
+int \textbf{ offset\+\_\+at} (int x, int y) const
+\item 
+virtual int \textbf{ bits\+\_\+per\+\_\+color} () const =0
+\item 
+virtual void \textbf{ set\+\_\+color} (int r, int g, int b)=0
+\item 
+virtual void \textbf{ set\+\_\+pixel} (int x, int y)=0
+\item 
+virtual void \textbf{ set\+\_\+pixel} (size\+\_\+t offset)=0
+\item 
+virtual void \textbf{ gl\+\_\+draw\+\_\+pixels} (int raster\+\_\+x, int raster\+\_\+y) const =0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \textbf{ width}
+\item 
+size\+\_\+t \textbf{ height}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{classgl_tools_1_1_color___buffer_abc8c83b7a9ab53a52796cbeba178e48e}} 
+\index{glTools::Color\_Buffer@{glTools::Color\_Buffer}!Color\_Buffer@{Color\_Buffer}}
+\index{Color\_Buffer@{Color\_Buffer}!glTools::Color\_Buffer@{glTools::Color\_Buffer}}
+\subsubsection{Color\_Buffer()}
+{\footnotesize\ttfamily gl\+Tools\+::\+Color\+\_\+\+Buffer\+::\+Color\+\_\+\+Buffer (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{width,  }\item[{size\+\_\+t}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{classgl_tools_1_1_color___buffer_a1222e2b7783735cc24f96bb4c6d7313f}} 
+\index{glTools::Color\_Buffer@{glTools::Color\_Buffer}!bits\_per\_color@{bits\_per\_color}}
+\index{bits\_per\_color@{bits\_per\_color}!glTools::Color\_Buffer@{glTools::Color\_Buffer}}
+\subsubsection{bits\_per\_color()}
+{\footnotesize\ttfamily virtual int gl\+Tools\+::\+Color\+\_\+\+Buffer\+::bits\+\_\+per\+\_\+color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \textbf{ gl\+Tools\+::\+Color\+\_\+\+Buffer\+\_\+\+Rgba8888} \doxyref{}{p.}{classgl_tools_1_1_color___buffer___rgba8888_a23a2f68299afe907476a141338a11b2f}.
+
+\mbox{\label{classgl_tools_1_1_color___buffer_ac37041aa2303c829490c5bd6409b43b4}} 
+\index{glTools::Color\_Buffer@{glTools::Color\_Buffer}!get\_height@{get\_height}}
+\index{get\_height@{get\_height}!glTools::Color\_Buffer@{glTools::Color\_Buffer}}
+\subsubsection{get\_height()}
+{\footnotesize\ttfamily size\+\_\+t gl\+Tools\+::\+Color\+\_\+\+Buffer\+::get\+\_\+height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classgl_tools_1_1_color___buffer_a4818cd6b4160351cbcaa4e6f8e73ec41}} 
+\index{glTools::Color\_Buffer@{glTools::Color\_Buffer}!get\_width@{get\_width}}
+\index{get\_width@{get\_width}!glTools::Color\_Buffer@{glTools::Color\_Buffer}}
+\subsubsection{get\_width()}
+{\footnotesize\ttfamily size\+\_\+t gl\+Tools\+::\+Color\+\_\+\+Buffer\+::get\+\_\+width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classgl_tools_1_1_color___buffer_ae395a70144c8561dd18d7ad0289f13b2}} 
+\index{glTools::Color\_Buffer@{glTools::Color\_Buffer}!gl\_draw\_pixels@{gl\_draw\_pixels}}
+\index{gl\_draw\_pixels@{gl\_draw\_pixels}!glTools::Color\_Buffer@{glTools::Color\_Buffer}}
+\subsubsection{gl\_draw\_pixels()}
+{\footnotesize\ttfamily virtual void gl\+Tools\+::\+Color\+\_\+\+Buffer\+::gl\+\_\+draw\+\_\+pixels (\begin{DoxyParamCaption}\item[{int}]{raster\+\_\+x,  }\item[{int}]{raster\+\_\+y }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \textbf{ gl\+Tools\+::\+Color\+\_\+\+Buffer\+\_\+\+Rgba8888} \doxyref{}{p.}{classgl_tools_1_1_color___buffer___rgba8888_abccc7498c34dbc5da4e2f24f756764a0}.
+
+\mbox{\label{classgl_tools_1_1_color___buffer_ac4bdfa8fa83eb045fa274c4551be8b3b}} 
+\index{glTools::Color\_Buffer@{glTools::Color\_Buffer}!offset\_at@{offset\_at}}
+\index{offset\_at@{offset\_at}!glTools::Color\_Buffer@{glTools::Color\_Buffer}}
+\subsubsection{offset\_at()}
+{\footnotesize\ttfamily int gl\+Tools\+::\+Color\+\_\+\+Buffer\+::offset\+\_\+at (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classgl_tools_1_1_color___buffer_afaafe4b5a93943982eb06940c2698591}} 
+\index{glTools::Color\_Buffer@{glTools::Color\_Buffer}!set\_color@{set\_color}}
+\index{set\_color@{set\_color}!glTools::Color\_Buffer@{glTools::Color\_Buffer}}
+\subsubsection{set\_color()}
+{\footnotesize\ttfamily virtual void gl\+Tools\+::\+Color\+\_\+\+Buffer\+::set\+\_\+color (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{g,  }\item[{int}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \textbf{ gl\+Tools\+::\+Color\+\_\+\+Buffer\+\_\+\+Rgba8888} \doxyref{}{p.}{classgl_tools_1_1_color___buffer___rgba8888_acc6c245b0dad2e925391f8cf579549c6}.
+
+\mbox{\label{classgl_tools_1_1_color___buffer_a5f7774fbbd0a59233019ad780b15bba4}} 
+\index{glTools::Color\_Buffer@{glTools::Color\_Buffer}!set\_pixel@{set\_pixel}}
+\index{set\_pixel@{set\_pixel}!glTools::Color\_Buffer@{glTools::Color\_Buffer}}
+\subsubsection{set\_pixel()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void gl\+Tools\+::\+Color\+\_\+\+Buffer\+::set\+\_\+pixel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \textbf{ gl\+Tools\+::\+Color\+\_\+\+Buffer\+\_\+\+Rgba8888} \doxyref{}{p.}{classgl_tools_1_1_color___buffer___rgba8888_ac4eb554dad4bc77e0852190e5849c45a}.
+
+\mbox{\label{classgl_tools_1_1_color___buffer_a00811352b8dc7352a45ed2497c750c1f}} 
+\index{glTools::Color\_Buffer@{glTools::Color\_Buffer}!set\_pixel@{set\_pixel}}
+\index{set\_pixel@{set\_pixel}!glTools::Color\_Buffer@{glTools::Color\_Buffer}}
+\subsubsection{set\_pixel()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void gl\+Tools\+::\+Color\+\_\+\+Buffer\+::set\+\_\+pixel (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \textbf{ gl\+Tools\+::\+Color\+\_\+\+Buffer\+\_\+\+Rgba8888} \doxyref{}{p.}{classgl_tools_1_1_color___buffer___rgba8888_a8ecf4a37ae09809b69af389baa70939b}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\label{classgl_tools_1_1_color___buffer_a5557b4f0e6367954817c5c91f0d15c02}} 
+\index{glTools::Color\_Buffer@{glTools::Color\_Buffer}!height@{height}}
+\index{height@{height}!glTools::Color\_Buffer@{glTools::Color\_Buffer}}
+\subsubsection{height}
+{\footnotesize\ttfamily size\+\_\+t gl\+Tools\+::\+Color\+\_\+\+Buffer\+::height\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\label{classgl_tools_1_1_color___buffer_a5098e47d1eb88bd0ba1dd3cbdfd1ecd9}} 
+\index{glTools::Color\_Buffer@{glTools::Color\_Buffer}!width@{width}}
+\index{width@{width}!glTools::Color\_Buffer@{glTools::Color\_Buffer}}
+\subsubsection{width}
+{\footnotesize\ttfamily size\+\_\+t gl\+Tools\+::\+Color\+\_\+\+Buffer\+::width\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+code/headers/\textbf{ Color\+\_\+\+Buffer.\+hpp}\end{DoxyCompactItemize}

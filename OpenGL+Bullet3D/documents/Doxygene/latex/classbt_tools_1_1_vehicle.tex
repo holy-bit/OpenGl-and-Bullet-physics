@@ -1,0 +1,111 @@
+\section{bt\+Tools\+::Vehicle Class Reference}
+\label{classbt_tools_1_1_vehicle}\index{btTools::Vehicle@{btTools::Vehicle}}
+
+
+{\ttfamily \#include $<$Vehicle.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Vehicle} (shared\+\_\+ptr$<$ \textbf{ Entity} $>$ \&parent, vector$<$ shared\+\_\+ptr$<$ \textbf{ Entity} $>$$>$ \&wheels\+\_\+P, shared\+\_\+ptr$<$ bt\+Discrete\+Dynamics\+World $>$ world)
+\begin{DoxyCompactList}\small\item\em Crea el vehiculo cogiendo la primera entidad como chasis y el vector como las ruedas del vehiculo. \end{DoxyCompactList}\item 
+void \textbf{ set\+Catapult\+Hinge} (shared\+\_\+ptr$<$ bt\+Hinge\+Constraint $>$ hinge)
+\begin{DoxyCompactList}\small\item\em Asigna un puntero a la union de la palanca de la catapulta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+shared\+\_\+ptr$<$ \textbf{ Entity} $>$ \textbf{ chasis}
+\item 
+vector$<$ shared\+\_\+ptr$<$ \textbf{ Entity} $>$ $>$ \textbf{ wheels}
+\item 
+vector$<$ shared\+\_\+ptr$<$ bt\+Hinge2\+Constraint $>$ $>$ \textbf{ hinges}
+\item 
+shared\+\_\+ptr$<$ bt\+Hinge\+Constraint $>$ \textbf{ catapult\+\_\+hinge}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{classbt_tools_1_1_vehicle_abc3c4af9445b35d51d3c6f2d8796bd10}} 
+\index{btTools::Vehicle@{btTools::Vehicle}!Vehicle@{Vehicle}}
+\index{Vehicle@{Vehicle}!btTools::Vehicle@{btTools::Vehicle}}
+\subsubsection{Vehicle()}
+{\footnotesize\ttfamily bt\+Tools\+::\+Vehicle\+::\+Vehicle (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \textbf{ Entity} $>$ \&}]{parent,  }\item[{vector$<$ shared\+\_\+ptr$<$ \textbf{ Entity} $>$$>$ \&}]{wheels\+\_\+P,  }\item[{shared\+\_\+ptr$<$ bt\+Discrete\+Dynamics\+World $>$}]{world }\end{DoxyParamCaption})}
+
+
+
+Crea el vehiculo cogiendo la primera entidad como chasis y el vector como las ruedas del vehiculo. 
+
+{\bfseries{Method\+: }} \doxyref{Vehicle}{p.}{classbt_tools_1_1_vehicle}
+
+{\bfseries{Full\+Name\+:}} \doxyref{bt\+Tools\+::\+Vehicle\+::\+Vehicle}{p.}{classbt_tools_1_1_vehicle_abc3c4af9445b35d51d3c6f2d8796bd10}
+
+{\bfseries{Access\+: }} public 
+\begin{DoxyParams}{Parameters}
+{\em shared\+\_\+ptr$<$\+Entity$>$} & \& parent \\
+\hline
+{\em vector$<$shared\+\_\+ptr$<$\+Entity$>$$>$} & \& wheels\+\_\+P \\
+\hline
+{\em shared\+\_\+ptr$<$} & bt\+Discrete\+Dynamics\+World $>$ world \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{classbt_tools_1_1_vehicle_a22d5a81d6f21c28b11d0fcca2c0db638}} 
+\index{btTools::Vehicle@{btTools::Vehicle}!setCatapultHinge@{setCatapultHinge}}
+\index{setCatapultHinge@{setCatapultHinge}!btTools::Vehicle@{btTools::Vehicle}}
+\subsubsection{setCatapultHinge()}
+{\footnotesize\ttfamily void bt\+Tools\+::\+Vehicle\+::set\+Catapult\+Hinge (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ bt\+Hinge\+Constraint $>$}]{hinge }\end{DoxyParamCaption})}
+
+
+
+Asigna un puntero a la union de la palanca de la catapulta. 
+
+{\bfseries{Method\+: }} set\+Catapult\+Hinge
+
+{\bfseries{Full\+Name\+:}} \doxyref{bt\+Tools\+::\+Vehicle\+::set\+Catapult\+Hinge}{p.}{classbt_tools_1_1_vehicle_a22d5a81d6f21c28b11d0fcca2c0db638}
+
+{\bfseries{Access\+: }} public 
+\begin{DoxyParams}{Parameters}
+{\em shared\+\_\+ptr$<$bt\+Hinge\+Constraint$>$} & hinge \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\label{classbt_tools_1_1_vehicle_adcd531797f70dbf674e074f90c0abedb}} 
+\index{btTools::Vehicle@{btTools::Vehicle}!catapult\_hinge@{catapult\_hinge}}
+\index{catapult\_hinge@{catapult\_hinge}!btTools::Vehicle@{btTools::Vehicle}}
+\subsubsection{catapult\_hinge}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$bt\+Hinge\+Constraint$>$ bt\+Tools\+::\+Vehicle\+::catapult\+\_\+hinge}
+
+Union de la palanca de la catapulta. \mbox{\label{classbt_tools_1_1_vehicle_a728e8823472bef3dc89e8063e3effc47}} 
+\index{btTools::Vehicle@{btTools::Vehicle}!chasis@{chasis}}
+\index{chasis@{chasis}!btTools::Vehicle@{btTools::Vehicle}}
+\subsubsection{chasis}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$\textbf{ Entity}$>$ bt\+Tools\+::\+Vehicle\+::chasis}
+
+Entidad que se utiliza como chasis. \mbox{\label{classbt_tools_1_1_vehicle_af5a3ab41284fd0561fb6bf4e682164b1}} 
+\index{btTools::Vehicle@{btTools::Vehicle}!hinges@{hinges}}
+\index{hinges@{hinges}!btTools::Vehicle@{btTools::Vehicle}}
+\subsubsection{hinges}
+{\footnotesize\ttfamily vector$<$shared\+\_\+ptr$<$bt\+Hinge2\+Constraint$>$ $>$ bt\+Tools\+::\+Vehicle\+::hinges}
+
+Uniones de las ruedas. \mbox{\label{classbt_tools_1_1_vehicle_a66cc06d2663ca10cac537c484ab2f0c0}} 
+\index{btTools::Vehicle@{btTools::Vehicle}!wheels@{wheels}}
+\index{wheels@{wheels}!btTools::Vehicle@{btTools::Vehicle}}
+\subsubsection{wheels}
+{\footnotesize\ttfamily vector$<$shared\+\_\+ptr$<$\textbf{ Entity}$>$ $>$ bt\+Tools\+::\+Vehicle\+::wheels}
+
+Entidades que sirven como ruedas. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+code/headers/\textbf{ Vehicle.\+hpp}\item 
+code/sources/\textbf{ Vehicle.\+cpp}\end{DoxyCompactItemize}

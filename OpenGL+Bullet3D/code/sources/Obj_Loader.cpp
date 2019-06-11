@@ -1,6 +1,6 @@
 /////////////////////////////
 	//Author: Luis Chamarro Alonso
-	//Date: 15/02/2019
+	//Date: 25/05/2019
 	//Videojuegos-Esne: 4.3
 
 
@@ -15,22 +15,18 @@ using namespace std;
 using namespace tinyobj;
 
 
-namespace example
+namespace glTools
 {
-	/**
-	*	Constructor que carga mallas desde un archivo obj.
-	*	@param string Recibe el directorio del archivo a cargar.
-	*/
-	Obj_Loader::Obj_Loader(const string & obj_file_path, const string& texture_path)
+	
+	Obj_Loader::Obj_Loader(const string & obj_file_path, const string& texture_path, glm::vec3 location , glm::vec3 scale, glm::vec3 rotation, float mass)
+		: Model(location,scale,rotation,mass)
 	{
 		attrib_t             attributes;
 		vector< shape_t    > shapes;
 		vector< material_t > materials;
 
-		if (!tinyobj::LoadObj(&attributes, &shapes, &materials, &error, obj_file_path.c_str()) || !error.empty())
-		{
-		//	return;
-		}
+		tinyobj::LoadObj(&attributes, &shapes, &materials, &error, obj_file_path.c_str());
+
 		
 		// Se comprueba si los datos son válidos:
 
@@ -50,7 +46,6 @@ namespace example
 			vector<Mesh::Vertex> vertexs(vertices_count);
 			vector< toolkit::Point4f > vertex_components(vertices_count);
 			vector< toolkit::Point4f > normal_components(vertices_count);
-			//renderer::Mesh::Vertex_Colors color_components(vertices_count);
 
 
 			size_t index_offset = 0;
@@ -92,8 +87,6 @@ namespace example
 			}
 
 			shared_ptr< Mesh > mesh(new Mesh(vertexs,index_positions,texture_path));
-			//mesh->set_Vertex(vertex_components,normal_components,color_components);
-			//mesh->set_index(index_positions);
 
 			get_meshes().push_back(*mesh);
 		}

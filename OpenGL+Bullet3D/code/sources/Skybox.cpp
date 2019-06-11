@@ -16,7 +16,7 @@
 #include "Vertex_Shader.hpp"
 #include "Fragment_Shader.hpp"
 
-namespace example
+namespace glTools
 {
 
     namespace

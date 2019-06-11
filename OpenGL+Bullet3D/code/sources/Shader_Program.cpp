@@ -14,7 +14,7 @@
 
 #include "Shader_Program.hpp"
 
-namespace example
+namespace glTools
 {
 
     bool Shader_Program::link ()

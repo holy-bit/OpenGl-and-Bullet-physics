@@ -1,0 +1,222 @@
+\section{example\+::Shader\+\_\+\+Program Class Reference}
+\label{classexample_1_1_shader___program}\index{example::Shader\_Program@{example::Shader\_Program}}
+
+
+{\ttfamily \#include $<$Shader\+\_\+\+Program.\+hpp$>$}
+
+Inheritance diagram for example\+::Shader\+\_\+\+Program\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classexample_1_1_shader___program}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Shader\+\_\+\+Program} ()
+\item 
+\textbf{ $\sim$\+Shader\+\_\+\+Program} ()
+\item 
+bool \textbf{ is\+\_\+usable} () const
+\item 
+void \textbf{ attach} (const \textbf{ Shader} \&shader)
+\item 
+void \textbf{ detach} (const \textbf{ Shader} \&shader)
+\item 
+bool \textbf{ link} ()
+\item 
+void \textbf{ use} () const
+\item 
+G\+Lint \textbf{ get\+\_\+uniform\+\_\+id} (const char $\ast$identifier)
+\item 
+void \textbf{ set\+\_\+uniform\+\_\+value} (G\+Lint uniform\+\_\+id, const G\+Lint \&value)
+\item 
+void \textbf{ set\+\_\+uniform\+\_\+value} (G\+Lint uniform\+\_\+id, const float \&value)
+\item 
+void \textbf{ set\+\_\+uniform\+\_\+value} (G\+Lint uniform\+\_\+id, const Vector2f \&vector)
+\item 
+void \textbf{ set\+\_\+uniform\+\_\+value} (G\+Lint uniform\+\_\+id, const Vector3f \&vector)
+\item 
+void \textbf{ set\+\_\+uniform\+\_\+value} (G\+Lint uniform\+\_\+id, const Vector4f \&vector)
+\item 
+void \textbf{ set\+\_\+uniform\+\_\+value} (G\+Lint uniform\+\_\+id, const Matrix22f \&matrix)
+\item 
+void \textbf{ set\+\_\+uniform\+\_\+value} (G\+Lint uniform\+\_\+id, const Matrix33f \&matrix)
+\item 
+void \textbf{ set\+\_\+uniform\+\_\+value} (G\+Lint uniform\+\_\+id, const Matrix44f \&matrix)
+\item 
+G\+Lint \textbf{ get\+\_\+vertex\+\_\+attribute\+\_\+id} (const char $\ast$identifier)
+\item 
+void \textbf{ set\+\_\+vertex\+\_\+attribute} (G\+Lint attribute\+\_\+id, const float \&value)
+\item 
+void \textbf{ set\+\_\+vertex\+\_\+attribute} (G\+Lint attribute\+\_\+id, const Vector2f \&vector)
+\item 
+void \textbf{ set\+\_\+vertex\+\_\+attribute} (G\+Lint attribute\+\_\+id, const Vector3f \&vector)
+\item 
+void \textbf{ set\+\_\+vertex\+\_\+attribute} (G\+Lint attribute\+\_\+id, const Vector4f \&vector)
+\item 
+const std\+::string \& \textbf{ log} () const
+\item 
+\textbf{ operator G\+Luint} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \textbf{ disable} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{classexample_1_1_shader___program_aa76001651ab84fda3d899a2b57f2a4b3}} 
+\index{example::Shader\_Program@{example::Shader\_Program}!Shader\_Program@{Shader\_Program}}
+\index{Shader\_Program@{Shader\_Program}!example::Shader\_Program@{example::Shader\_Program}}
+\subsubsection{Shader\_Program()}
+{\footnotesize\ttfamily example\+::\+Shader\+\_\+\+Program\+::\+Shader\+\_\+\+Program (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_shader___program_a39b461d067ffc3a10662e1d4fcb6d689}} 
+\index{example::Shader\_Program@{example::Shader\_Program}!````~Shader\_Program@{$\sim$Shader\_Program}}
+\index{````~Shader\_Program@{$\sim$Shader\_Program}!example::Shader\_Program@{example::Shader\_Program}}
+\subsubsection{$\sim$Shader\_Program()}
+{\footnotesize\ttfamily example\+::\+Shader\+\_\+\+Program\+::$\sim$\+Shader\+\_\+\+Program (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{classexample_1_1_shader___program_ab4b58aa69e6a4afc44e63a660b0e59b0}} 
+\index{example::Shader\_Program@{example::Shader\_Program}!attach@{attach}}
+\index{attach@{attach}!example::Shader\_Program@{example::Shader\_Program}}
+\subsubsection{attach()}
+{\footnotesize\ttfamily void example\+::\+Shader\+\_\+\+Program\+::attach (\begin{DoxyParamCaption}\item[{const \textbf{ Shader} \&}]{shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_shader___program_a83c1ac06873858589f454c5dfaa7b00c}} 
+\index{example::Shader\_Program@{example::Shader\_Program}!detach@{detach}}
+\index{detach@{detach}!example::Shader\_Program@{example::Shader\_Program}}
+\subsubsection{detach()}
+{\footnotesize\ttfamily void example\+::\+Shader\+\_\+\+Program\+::detach (\begin{DoxyParamCaption}\item[{const \textbf{ Shader} \&}]{shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_shader___program_a1fe0129a78e4bf33fd07de4448e3657b}} 
+\index{example::Shader\_Program@{example::Shader\_Program}!disable@{disable}}
+\index{disable@{disable}!example::Shader\_Program@{example::Shader\_Program}}
+\subsubsection{disable()}
+{\footnotesize\ttfamily static void example\+::\+Shader\+\_\+\+Program\+::disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\label{classexample_1_1_shader___program_a03a790d8c22cbe1d6b0c9a1857a13a0e}} 
+\index{example::Shader\_Program@{example::Shader\_Program}!get\_uniform\_id@{get\_uniform\_id}}
+\index{get\_uniform\_id@{get\_uniform\_id}!example::Shader\_Program@{example::Shader\_Program}}
+\subsubsection{get\_uniform\_id()}
+{\footnotesize\ttfamily G\+Lint example\+::\+Shader\+\_\+\+Program\+::get\+\_\+uniform\+\_\+id (\begin{DoxyParamCaption}\item[{const char $\ast$}]{identifier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_shader___program_ae0539221bf0626e303c7138b2f4764a0}} 
+\index{example::Shader\_Program@{example::Shader\_Program}!get\_vertex\_attribute\_id@{get\_vertex\_attribute\_id}}
+\index{get\_vertex\_attribute\_id@{get\_vertex\_attribute\_id}!example::Shader\_Program@{example::Shader\_Program}}
+\subsubsection{get\_vertex\_attribute\_id()}
+{\footnotesize\ttfamily G\+Lint example\+::\+Shader\+\_\+\+Program\+::get\+\_\+vertex\+\_\+attribute\+\_\+id (\begin{DoxyParamCaption}\item[{const char $\ast$}]{identifier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_shader___program_ae76d165cf329883dfc287b37ecc313c2}} 
+\index{example::Shader\_Program@{example::Shader\_Program}!is\_usable@{is\_usable}}
+\index{is\_usable@{is\_usable}!example::Shader\_Program@{example::Shader\_Program}}
+\subsubsection{is\_usable()}
+{\footnotesize\ttfamily bool example\+::\+Shader\+\_\+\+Program\+::is\+\_\+usable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_shader___program_a6cf9a8d19d6c43210aaf5a51c036d214}} 
+\index{example::Shader\_Program@{example::Shader\_Program}!link@{link}}
+\index{link@{link}!example::Shader\_Program@{example::Shader\_Program}}
+\subsubsection{link()}
+{\footnotesize\ttfamily bool example\+::\+Shader\+\_\+\+Program\+::link (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\label{classexample_1_1_shader___program_a9f1bd162f1a3eede5b8c685a830b4021}} 
+\index{example::Shader\_Program@{example::Shader\_Program}!log@{log}}
+\index{log@{log}!example::Shader\_Program@{example::Shader\_Program}}
+\subsubsection{log()}
+{\footnotesize\ttfamily const std\+::string\& example\+::\+Shader\+\_\+\+Program\+::log (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_shader___program_a0c9b4a8eca4fa15682d92c29801d55f1}} 
+\index{example::Shader\_Program@{example::Shader\_Program}!operator GLuint@{operator GLuint}}
+\index{operator GLuint@{operator GLuint}!example::Shader\_Program@{example::Shader\_Program}}
+\subsubsection{operator GLuint()}
+{\footnotesize\ttfamily example\+::\+Shader\+\_\+\+Program\+::operator G\+Luint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_shader___program_a7a40f28185d128a50c2fa398397b7a05}} 
+\index{example::Shader\_Program@{example::Shader\_Program}!set\_uniform\_value@{set\_uniform\_value}}
+\index{set\_uniform\_value@{set\_uniform\_value}!example::Shader\_Program@{example::Shader\_Program}}
+\subsubsection{set\_uniform\_value()\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily void example\+::\+Shader\+\_\+\+Program\+::set\+\_\+uniform\+\_\+value (\begin{DoxyParamCaption}\item[{G\+Lint}]{uniform\+\_\+id,  }\item[{const G\+Lint \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_shader___program_a55bc4282ec8472d1794c5f7d48d5ff4b}} 
+\index{example::Shader\_Program@{example::Shader\_Program}!set\_uniform\_value@{set\_uniform\_value}}
+\index{set\_uniform\_value@{set\_uniform\_value}!example::Shader\_Program@{example::Shader\_Program}}
+\subsubsection{set\_uniform\_value()\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily void example\+::\+Shader\+\_\+\+Program\+::set\+\_\+uniform\+\_\+value (\begin{DoxyParamCaption}\item[{G\+Lint}]{uniform\+\_\+id,  }\item[{const float \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_shader___program_a91b8b17fda08bc9f1b6c94bfe8c4f8d3}} 
+\index{example::Shader\_Program@{example::Shader\_Program}!set\_uniform\_value@{set\_uniform\_value}}
+\index{set\_uniform\_value@{set\_uniform\_value}!example::Shader\_Program@{example::Shader\_Program}}
+\subsubsection{set\_uniform\_value()\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily void example\+::\+Shader\+\_\+\+Program\+::set\+\_\+uniform\+\_\+value (\begin{DoxyParamCaption}\item[{G\+Lint}]{uniform\+\_\+id,  }\item[{const Vector2f \&}]{vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_shader___program_a4cf2fdc503438ec1d4d97aa6cd3c2ee7}} 
+\index{example::Shader\_Program@{example::Shader\_Program}!set\_uniform\_value@{set\_uniform\_value}}
+\index{set\_uniform\_value@{set\_uniform\_value}!example::Shader\_Program@{example::Shader\_Program}}
+\subsubsection{set\_uniform\_value()\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily void example\+::\+Shader\+\_\+\+Program\+::set\+\_\+uniform\+\_\+value (\begin{DoxyParamCaption}\item[{G\+Lint}]{uniform\+\_\+id,  }\item[{const Vector3f \&}]{vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_shader___program_a2a2c6ff8951da9673abe325af811fafa}} 
+\index{example::Shader\_Program@{example::Shader\_Program}!set\_uniform\_value@{set\_uniform\_value}}
+\index{set\_uniform\_value@{set\_uniform\_value}!example::Shader\_Program@{example::Shader\_Program}}
+\subsubsection{set\_uniform\_value()\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily void example\+::\+Shader\+\_\+\+Program\+::set\+\_\+uniform\+\_\+value (\begin{DoxyParamCaption}\item[{G\+Lint}]{uniform\+\_\+id,  }\item[{const Vector4f \&}]{vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_shader___program_a01a9e5843a65dd8e58f70762970e88c2}} 
+\index{example::Shader\_Program@{example::Shader\_Program}!set\_uniform\_value@{set\_uniform\_value}}
+\index{set\_uniform\_value@{set\_uniform\_value}!example::Shader\_Program@{example::Shader\_Program}}
+\subsubsection{set\_uniform\_value()\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily void example\+::\+Shader\+\_\+\+Program\+::set\+\_\+uniform\+\_\+value (\begin{DoxyParamCaption}\item[{G\+Lint}]{uniform\+\_\+id,  }\item[{const Matrix22f \&}]{matrix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_shader___program_aff80e9ffddea9450a6f79320ac53e085}} 
+\index{example::Shader\_Program@{example::Shader\_Program}!set\_uniform\_value@{set\_uniform\_value}}
+\index{set\_uniform\_value@{set\_uniform\_value}!example::Shader\_Program@{example::Shader\_Program}}
+\subsubsection{set\_uniform\_value()\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily void example\+::\+Shader\+\_\+\+Program\+::set\+\_\+uniform\+\_\+value (\begin{DoxyParamCaption}\item[{G\+Lint}]{uniform\+\_\+id,  }\item[{const Matrix33f \&}]{matrix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_shader___program_a8ed8144f9d999bf09e774a4919a449f2}} 
+\index{example::Shader\_Program@{example::Shader\_Program}!set\_uniform\_value@{set\_uniform\_value}}
+\index{set\_uniform\_value@{set\_uniform\_value}!example::Shader\_Program@{example::Shader\_Program}}
+\subsubsection{set\_uniform\_value()\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily void example\+::\+Shader\+\_\+\+Program\+::set\+\_\+uniform\+\_\+value (\begin{DoxyParamCaption}\item[{G\+Lint}]{uniform\+\_\+id,  }\item[{const Matrix44f \&}]{matrix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_shader___program_a3f3c9e0b56278a38b467a50a8e52d396}} 
+\index{example::Shader\_Program@{example::Shader\_Program}!set\_vertex\_attribute@{set\_vertex\_attribute}}
+\index{set\_vertex\_attribute@{set\_vertex\_attribute}!example::Shader\_Program@{example::Shader\_Program}}
+\subsubsection{set\_vertex\_attribute()\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void example\+::\+Shader\+\_\+\+Program\+::set\+\_\+vertex\+\_\+attribute (\begin{DoxyParamCaption}\item[{G\+Lint}]{attribute\+\_\+id,  }\item[{const float \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_shader___program_adc75685af2153c0b509722f6ca780c0d}} 
+\index{example::Shader\_Program@{example::Shader\_Program}!set\_vertex\_attribute@{set\_vertex\_attribute}}
+\index{set\_vertex\_attribute@{set\_vertex\_attribute}!example::Shader\_Program@{example::Shader\_Program}}
+\subsubsection{set\_vertex\_attribute()\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void example\+::\+Shader\+\_\+\+Program\+::set\+\_\+vertex\+\_\+attribute (\begin{DoxyParamCaption}\item[{G\+Lint}]{attribute\+\_\+id,  }\item[{const Vector2f \&}]{vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_shader___program_ae02dbec6468a93f30db194d40a1fd518}} 
+\index{example::Shader\_Program@{example::Shader\_Program}!set\_vertex\_attribute@{set\_vertex\_attribute}}
+\index{set\_vertex\_attribute@{set\_vertex\_attribute}!example::Shader\_Program@{example::Shader\_Program}}
+\subsubsection{set\_vertex\_attribute()\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void example\+::\+Shader\+\_\+\+Program\+::set\+\_\+vertex\+\_\+attribute (\begin{DoxyParamCaption}\item[{G\+Lint}]{attribute\+\_\+id,  }\item[{const Vector3f \&}]{vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_shader___program_a9629fefd3e83e7c0f9ff52589e341393}} 
+\index{example::Shader\_Program@{example::Shader\_Program}!set\_vertex\_attribute@{set\_vertex\_attribute}}
+\index{set\_vertex\_attribute@{set\_vertex\_attribute}!example::Shader\_Program@{example::Shader\_Program}}
+\subsubsection{set\_vertex\_attribute()\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void example\+::\+Shader\+\_\+\+Program\+::set\+\_\+vertex\+\_\+attribute (\begin{DoxyParamCaption}\item[{G\+Lint}]{attribute\+\_\+id,  }\item[{const Vector4f \&}]{vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_shader___program_a70c29ba798a57a71ca2b74463f5ffe19}} 
+\index{example::Shader\_Program@{example::Shader\_Program}!use@{use}}
+\index{use@{use}!example::Shader\_Program@{example::Shader\_Program}}
+\subsubsection{use()}
+{\footnotesize\ttfamily void example\+::\+Shader\+\_\+\+Program\+::use (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+code/headers/\textbf{ Shader\+\_\+\+Program.\+hpp}\item 
+code/sources/\textbf{ Shader\+\_\+\+Program.\+cpp}\end{DoxyCompactItemize}

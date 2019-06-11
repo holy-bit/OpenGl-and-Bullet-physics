@@ -1,0 +1,221 @@
+\section{example\+::Scene Class Reference}
+\label{classexample_1_1_scene}\index{example::Scene@{example::Scene}}
+
+
+{\ttfamily \#include $<$Scene.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Scene} (int \textbf{ width}, int \textbf{ height})
+\item 
+void \textbf{ update} ()
+\item 
+void \textbf{ render} ()
+\item 
+void \textbf{ resize} (int \textbf{ width}, int \textbf{ height})
+\item 
+void \textbf{ on\+\_\+key} ()
+\item 
+void \textbf{ on\+\_\+drag} (int pointer\+\_\+x, int pointer\+\_\+y)
+\item 
+void \textbf{ on\+\_\+click} (int pointer\+\_\+x, int pointer\+\_\+y, bool down)
+\item 
+void \textbf{ on\+\_\+key\+\_\+realeased} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, shared\+\_\+ptr$<$ \textbf{ Model} $>$ $>$ \textbf{ models}
+\item 
+shared\+\_\+ptr$<$ \textbf{ Vehicle\+\_\+\+Component} $>$ \textbf{ vehicle}
+\item 
+float \textbf{ angle}
+\item 
+int \textbf{ width}
+\item 
+int \textbf{ height}
+\item 
+float \textbf{ angle\+\_\+around\+\_\+x}
+\item 
+float \textbf{ angle\+\_\+around\+\_\+y}
+\item 
+float \textbf{ angle\+\_\+delta\+\_\+x}
+\item 
+float \textbf{ angle\+\_\+delta\+\_\+y}
+\item 
+bool \textbf{ pointer\+\_\+pressed}
+\item 
+int \textbf{ last\+\_\+pointer\+\_\+x}
+\item 
+int \textbf{ last\+\_\+pointer\+\_\+y}
+\item 
+glm\+::vec3 \textbf{ front} \{0,0,1\}
+\item 
+glm\+::vec3 \textbf{ direction}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{classexample_1_1_scene_abd25cb79fd73a7e062a5062e972e89a0}} 
+\index{example::Scene@{example::Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!example::Scene@{example::Scene}}
+\subsubsection{Scene()}
+{\footnotesize\ttfamily example\+::\+Scene\+::\+Scene (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{classexample_1_1_scene_a4ae02a267a2b7ae7af281feceb7459f5}} 
+\index{example::Scene@{example::Scene}!on\_click@{on\_click}}
+\index{on\_click@{on\_click}!example::Scene@{example::Scene}}
+\subsubsection{on\_click()}
+{\footnotesize\ttfamily void example\+::\+Scene\+::on\+\_\+click (\begin{DoxyParamCaption}\item[{int}]{pointer\+\_\+x,  }\item[{int}]{pointer\+\_\+y,  }\item[{bool}]{down }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+hola
+
+{\bfseries{Method\+: }} on\+\_\+click
+
+{\bfseries{Full\+Name\+:}} \doxyref{example\+::\+Scene\+::on\+\_\+click}{p.}{classexample_1_1_scene_a4ae02a267a2b7ae7af281feceb7459f5}
+
+{\bfseries{Access\+: }} public 
+\begin{DoxyParams}{Parameters}
+{\em int} & pointer\+\_\+x \\
+\hline
+{\em int} & pointer\+\_\+y \\
+\hline
+{\em bool} & down \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\label{classexample_1_1_scene_ac86c37ae2be0c1ed16f7b2fabdf05360}} 
+\index{example::Scene@{example::Scene}!on\_drag@{on\_drag}}
+\index{on\_drag@{on\_drag}!example::Scene@{example::Scene}}
+\subsubsection{on\_drag()}
+{\footnotesize\ttfamily void example\+::\+Scene\+::on\+\_\+drag (\begin{DoxyParamCaption}\item[{int}]{pointer\+\_\+x,  }\item[{int}]{pointer\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_scene_a3e6db909d51694b0706e07586abe2207}} 
+\index{example::Scene@{example::Scene}!on\_key@{on\_key}}
+\index{on\_key@{on\_key}!example::Scene@{example::Scene}}
+\subsubsection{on\_key()}
+{\footnotesize\ttfamily void example\+::\+Scene\+::on\+\_\+key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Evento de pulsar una tecla. \mbox{\label{classexample_1_1_scene_ac982f4203c7340dfc9b0963149476bde}} 
+\index{example::Scene@{example::Scene}!on\_key\_realeased@{on\_key\_realeased}}
+\index{on\_key\_realeased@{on\_key\_realeased}!example::Scene@{example::Scene}}
+\subsubsection{on\_key\_realeased()}
+{\footnotesize\ttfamily void example\+::\+Scene\+::on\+\_\+key\+\_\+realeased (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\label{classexample_1_1_scene_a6e8672b9fab7eaa38bc039467dc0b66a}} 
+\index{example::Scene@{example::Scene}!render@{render}}
+\index{render@{render}!example::Scene@{example::Scene}}
+\subsubsection{render()}
+{\footnotesize\ttfamily void example\+::\+Scene\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Dibujado de la escena. \mbox{\label{classexample_1_1_scene_a96fdbfc5f6fde59dd1372af8e0ad6bfb}} 
+\index{example::Scene@{example::Scene}!resize@{resize}}
+\index{resize@{resize}!example::Scene@{example::Scene}}
+\subsubsection{resize()}
+{\footnotesize\ttfamily void example\+::\+Scene\+::resize (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+Redimendimensionar la escena respecto al tamaño de la ventana. \mbox{\label{classexample_1_1_scene_ae9149811a4e84612f753a3ad0dd2c214}} 
+\index{example::Scene@{example::Scene}!update@{update}}
+\index{update@{update}!example::Scene@{example::Scene}}
+\subsubsection{update()}
+{\footnotesize\ttfamily void example\+::\+Scene\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Actualizacion de la escena. 
+
+\subsection{Member Data Documentation}
+\mbox{\label{classexample_1_1_scene_aa610b732ba9b4e16c472435eff3781bd}} 
+\index{example::Scene@{example::Scene}!angle@{angle}}
+\index{angle@{angle}!example::Scene@{example::Scene}}
+\subsubsection{angle}
+{\footnotesize\ttfamily float example\+::\+Scene\+::angle}
+
+angulo de giro que se incrementa en el tiempo \mbox{\label{classexample_1_1_scene_a4f3b06f8a07cf82c5876be93a036ac8c}} 
+\index{example::Scene@{example::Scene}!angle\_around\_x@{angle\_around\_x}}
+\index{angle\_around\_x@{angle\_around\_x}!example::Scene@{example::Scene}}
+\subsubsection{angle\_around\_x}
+{\footnotesize\ttfamily float example\+::\+Scene\+::angle\+\_\+around\+\_\+x}
+
+\mbox{\label{classexample_1_1_scene_a9bf6905673690b7f9345c7543db5c63d}} 
+\index{example::Scene@{example::Scene}!angle\_around\_y@{angle\_around\_y}}
+\index{angle\_around\_y@{angle\_around\_y}!example::Scene@{example::Scene}}
+\subsubsection{angle\_around\_y}
+{\footnotesize\ttfamily float example\+::\+Scene\+::angle\+\_\+around\+\_\+y}
+
+\mbox{\label{classexample_1_1_scene_aa1074dc5a03415c6ee5bb9a01be5f6bc}} 
+\index{example::Scene@{example::Scene}!angle\_delta\_x@{angle\_delta\_x}}
+\index{angle\_delta\_x@{angle\_delta\_x}!example::Scene@{example::Scene}}
+\subsubsection{angle\_delta\_x}
+{\footnotesize\ttfamily float example\+::\+Scene\+::angle\+\_\+delta\+\_\+x}
+
+\mbox{\label{classexample_1_1_scene_aa5f1d3bbac575198bed64459e869c59f}} 
+\index{example::Scene@{example::Scene}!angle\_delta\_y@{angle\_delta\_y}}
+\index{angle\_delta\_y@{angle\_delta\_y}!example::Scene@{example::Scene}}
+\subsubsection{angle\_delta\_y}
+{\footnotesize\ttfamily float example\+::\+Scene\+::angle\+\_\+delta\+\_\+y}
+
+\mbox{\label{classexample_1_1_scene_ad491a30f6fb1b104df2e9dd248cf7d15}} 
+\index{example::Scene@{example::Scene}!direction@{direction}}
+\index{direction@{direction}!example::Scene@{example::Scene}}
+\subsubsection{direction}
+{\footnotesize\ttfamily glm\+::vec3 example\+::\+Scene\+::direction}
+
+\mbox{\label{classexample_1_1_scene_ae4f2058c30af324ad50430dfa4bd6739}} 
+\index{example::Scene@{example::Scene}!front@{front}}
+\index{front@{front}!example::Scene@{example::Scene}}
+\subsubsection{front}
+{\footnotesize\ttfamily glm\+::vec3 example\+::\+Scene\+::front \{0,0,1\}}
+
+\mbox{\label{classexample_1_1_scene_ac42c477064c97387e3c81a97de8a8acd}} 
+\index{example::Scene@{example::Scene}!height@{height}}
+\index{height@{height}!example::Scene@{example::Scene}}
+\subsubsection{height}
+{\footnotesize\ttfamily int example\+::\+Scene\+::height}
+
+Altura de la ventana \mbox{\label{classexample_1_1_scene_acb398957e3322a1ab20c4b939caa8452}} 
+\index{example::Scene@{example::Scene}!last\_pointer\_x@{last\_pointer\_x}}
+\index{last\_pointer\_x@{last\_pointer\_x}!example::Scene@{example::Scene}}
+\subsubsection{last\_pointer\_x}
+{\footnotesize\ttfamily int example\+::\+Scene\+::last\+\_\+pointer\+\_\+x}
+
+\mbox{\label{classexample_1_1_scene_a0c58651bb9b628d020d67b5cd91442dc}} 
+\index{example::Scene@{example::Scene}!last\_pointer\_y@{last\_pointer\_y}}
+\index{last\_pointer\_y@{last\_pointer\_y}!example::Scene@{example::Scene}}
+\subsubsection{last\_pointer\_y}
+{\footnotesize\ttfamily int example\+::\+Scene\+::last\+\_\+pointer\+\_\+y}
+
+\mbox{\label{classexample_1_1_scene_a046e3c832bc1a6c727c656ebbb778565}} 
+\index{example::Scene@{example::Scene}!models@{models}}
+\index{models@{models}!example::Scene@{example::Scene}}
+\subsubsection{models}
+{\footnotesize\ttfamily map$<$string, shared\+\_\+ptr$<$\textbf{ Model}$>$ $>$ example\+::\+Scene\+::models}
+
+Lista de los modelos en la escena \mbox{\label{classexample_1_1_scene_ad39eb6ddb7504d2af335aa84f32d35fa}} 
+\index{example::Scene@{example::Scene}!pointer\_pressed@{pointer\_pressed}}
+\index{pointer\_pressed@{pointer\_pressed}!example::Scene@{example::Scene}}
+\subsubsection{pointer\_pressed}
+{\footnotesize\ttfamily bool example\+::\+Scene\+::pointer\+\_\+pressed}
+
+\mbox{\label{classexample_1_1_scene_a94cce28813eb060ea0bc15be52129540}} 
+\index{example::Scene@{example::Scene}!vehicle@{vehicle}}
+\index{vehicle@{vehicle}!example::Scene@{example::Scene}}
+\subsubsection{vehicle}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$\textbf{ Vehicle\+\_\+\+Component}$>$ example\+::\+Scene\+::vehicle}
+
+Vehiculo que controla el juegador \mbox{\label{classexample_1_1_scene_ad22c93e57e3b2e3db20cca07cb68d768}} 
+\index{example::Scene@{example::Scene}!width@{width}}
+\index{width@{width}!example::Scene@{example::Scene}}
+\subsubsection{width}
+{\footnotesize\ttfamily int example\+::\+Scene\+::width}
+
+Ancho de la ventana 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+code/headers/\textbf{ Scene.\+hpp}\item 
+code/sources/\textbf{ Scene.\+cpp}\end{DoxyCompactItemize}

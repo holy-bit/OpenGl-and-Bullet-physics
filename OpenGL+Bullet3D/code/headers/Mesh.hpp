@@ -1,6 +1,6 @@
 ﻿/////////////////////////////
 	//Author: Luis Chamarro Alonso
-	//Date: 15/02/2019
+	//Date: 25/05/2019
 	//Videojuegos-Esne: 4.3
 
 
@@ -32,7 +32,7 @@ extern "C"
 #include <targa.h>
 }
 
-namespace example
+namespace glTools
 {
 	class Mesh
 	{
@@ -44,65 +44,58 @@ namespace example
 			glm::vec2 TexCoords;
 		};
 
-		/*struct Texture {
-			unsigned int id;
-			string type;
-		};*/
-
 	public:
 		/*  Mesh Data  */
 		vector<Vertex> vertices;
 		vector<unsigned int> indices;
 		unsigned int VAO;
 		std::shared_ptr< Texture > texture;
-		/*  Functions  */
+
 		bool has_texture;
 		GLuint texture_id;
-		Mesh(vector<Vertex> vertices, vector<unsigned int> indices, const string& texture_path);
+		
 		//void Draw(Shader shader);
-		void Draw();
+		
 	private:
 		/*  Render data  */
 		unsigned int VBO, EBO;
 		/*  Functions    */
-		void setupMesh();
-
-		
-		
-
-	private:
-	
-		
-
-		Transformation3f  transform; /**< transform del modelo al que perteneces */
-
 		
 
 	public:
-		//Mesh() = default;
-	 
-		/**
-		*	Inicializa y redimensiona los vectores de los distintos tipos de procesado de los vertices y la direccion de la luz.
-			@param Vertex_Buffer vector con las posiciones de los vertices de la malla.
-			@param Vertex_Buffer normales de los vertices de la malla.
-			@param Vertex_Colors colores de los vertices de la malla.
-		*/
-		//void set_Vertex(Vertex_Buffer& vertex_P, Vertex_Buffer& normalsP, Vertex_Colors colorsP);
 
-		/**
-		*	Guarda los indices de de los vertices.
-			@param Index_Buffer indices de los Vertex_Buffer de vertices y normales.
-		*/
-		//void set_index(Index_Buffer& index){ index_positions = index; }
 
+		//! Crea la malla 
+		/*! <b>Method:  </b>     Mesh */
+		/*! <b>FullName:</b>     glTools::Mesh::Mesh */
+		/*! <b>Access:  </b>     public  */
 		/**
-		*	Guarda el transform que recibe.
-			@param Transformation3f tranformacion de todas las matrices de position,rotacion y escala.
+		* @param   vector<Vertex> vertices
+		* @param   vector<unsigned int> indices
+		* @param   const string & texture_path
+		* @return  
 		*/
-		void set_Transform(Transformation3f& transformP) { transform = transformP; };
+		Mesh(vector<Vertex> vertices, vector<unsigned int> indices, const string& texture_path);
 
-		void update();
-		
+		//! Carga todos los datos de la malla a OpenGL.
+		/*! <b>Method:  </b>     setupMesh */
+		/*! <b>FullName:</b>     glTools::Mesh::setupMesh */
+		/*! <b>Access:  </b>     public  */
+		/**
+		* @return  void
+		*/
+		void setupMesh();
+
+		//! Dibuja la malla.
+		/*! <b>Method:  </b>     Draw */
+		/*! <b>FullName:</b>     glTools::Mesh::Draw */
+		/*! <b>Access:  </b>     public  */
+		/**
+		* @return  void
+		*/
+		void Draw();
+
+
 		std::shared_ptr< Texture > load_texture(const std::string& texture_path)
 		{
 			std::shared_ptr< Texture > buffer;

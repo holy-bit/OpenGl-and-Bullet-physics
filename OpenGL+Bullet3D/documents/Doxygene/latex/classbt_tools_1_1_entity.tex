@@ -1,0 +1,147 @@
+\section{bt\+Tools\+::Entity Class Reference}
+\label{classbt_tools_1_1_entity}\index{btTools::Entity@{btTools::Entity}}
+
+
+{\ttfamily \#include $<$Entity.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Entity} (shared\+\_\+ptr$<$ \textbf{ Model} $>$ model\+\_\+P, shared\+\_\+ptr$<$ bt\+Discrete\+Dynamics\+World $>$ world, bt\+Transform \&start\+Transform, bt\+Vector3 size\+\_\+P=\{ 1, 1, 1 \}, float mass=0, bt\+Collision\+Shape $\ast$shape\+\_\+P=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor de la entidad, crea la colision el cuerpo y el motion state. \end{DoxyCompactList}\item 
+void \textbf{ update} ()
+\begin{DoxyCompactList}\small\item\em Actualiza la entidad. \end{DoxyCompactList}\item 
+void \textbf{ destroy} ()
+\begin{DoxyCompactList}\small\item\em Destruye el cuerpo fisico de la entidad. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bt\+Transform \textbf{ physics\+\_\+transform}
+\item 
+shared\+\_\+ptr$<$ \textbf{ Model} $>$ \textbf{ model}
+\item 
+shared\+\_\+ptr$<$ bt\+Rigid\+Body $>$ \textbf{ body}
+\item 
+shared\+\_\+ptr$<$ bt\+Default\+Motion\+State $>$ \textbf{ state}
+\item 
+shared\+\_\+ptr$<$ bt\+Collision\+Shape $>$ \textbf{ collision\+Shape}
+\item 
+shared\+\_\+ptr$<$ bt\+Discrete\+Dynamics\+World $>$ \textbf{ worldP}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{classbt_tools_1_1_entity_a627f6394125d151f589209345af6e3f7}} 
+\index{btTools::Entity@{btTools::Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!btTools::Entity@{btTools::Entity}}
+\subsubsection{Entity()}
+{\footnotesize\ttfamily bt\+Tools\+::\+Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \textbf{ Model} $>$}]{model\+\_\+P,  }\item[{shared\+\_\+ptr$<$ bt\+Discrete\+Dynamics\+World $>$}]{world,  }\item[{bt\+Transform \&}]{start\+Transform,  }\item[{bt\+Vector3}]{size\+\_\+P = {\ttfamily \{~1,1,1~\}},  }\item[{float}]{mass = {\ttfamily 0},  }\item[{bt\+Collision\+Shape $\ast$}]{shape\+\_\+P = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Constructor de la entidad, crea la colision el cuerpo y el motion state. 
+
+{\bfseries{Method\+: }} \doxyref{Entity}{p.}{classbt_tools_1_1_entity}
+
+{\bfseries{Full\+Name\+:}} \doxyref{bt\+Tools\+::\+Entity\+::\+Entity}{p.}{classbt_tools_1_1_entity_a627f6394125d151f589209345af6e3f7}
+
+{\bfseries{Access\+: }} public 
+\begin{DoxyParams}{Parameters}
+{\em shared\+\_\+ptr$<$\+Model$>$} & model\+\_\+P \\
+\hline
+{\em shared\+\_\+ptr$<$} & bt\+Discrete\+Dynamics\+World$>$ world \\
+\hline
+{\em bt\+Transform} & \& start\+Transform \\
+\hline
+{\em bt\+Vector3} & size\+\_\+P \\
+\hline
+{\em float} & mass \\
+\hline
+{\em bt\+Collision\+Shape} & $\ast$ shape\+\_\+P \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{classbt_tools_1_1_entity_a5963ff3839a546581c13b3037dda7754}} 
+\index{btTools::Entity@{btTools::Entity}!destroy@{destroy}}
+\index{destroy@{destroy}!btTools::Entity@{btTools::Entity}}
+\subsubsection{destroy()}
+{\footnotesize\ttfamily void bt\+Tools\+::\+Entity\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruye el cuerpo fisico de la entidad. 
+
+{\bfseries{Method\+: }} destroy
+
+{\bfseries{Full\+Name\+:}} \doxyref{bt\+Tools\+::\+Entity\+::destroy}{p.}{classbt_tools_1_1_entity_a5963ff3839a546581c13b3037dda7754}
+
+{\bfseries{Access\+: }} public \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\label{classbt_tools_1_1_entity_aeef1d156250a70c1db3a3c50bfe8ebc9}} 
+\index{btTools::Entity@{btTools::Entity}!update@{update}}
+\index{update@{update}!btTools::Entity@{btTools::Entity}}
+\subsubsection{update()}
+{\footnotesize\ttfamily void bt\+Tools\+::\+Entity\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Actualiza la entidad. 
+
+{\bfseries{Method\+: }} update
+
+{\bfseries{Full\+Name\+:}} \doxyref{bt\+Tools\+::\+Entity\+::update}{p.}{classbt_tools_1_1_entity_aeef1d156250a70c1db3a3c50bfe8ebc9}
+
+{\bfseries{Access\+: }} public \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\label{classbt_tools_1_1_entity_ad822b961b920f6869d1e3b98cc6da262}} 
+\index{btTools::Entity@{btTools::Entity}!body@{body}}
+\index{body@{body}!btTools::Entity@{btTools::Entity}}
+\subsubsection{body}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ bt\+Rigid\+Body $>$ bt\+Tools\+::\+Entity\+::body}
+
+Cuerpo fisico de la entidad. \mbox{\label{classbt_tools_1_1_entity_a1f5f6cc41bda4e4499c128e6fc337907}} 
+\index{btTools::Entity@{btTools::Entity}!collisionShape@{collisionShape}}
+\index{collisionShape@{collisionShape}!btTools::Entity@{btTools::Entity}}
+\subsubsection{collisionShape}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ bt\+Collision\+Shape $>$ bt\+Tools\+::\+Entity\+::collision\+Shape}
+
+La forma de la colision del cuerpo. \mbox{\label{classbt_tools_1_1_entity_acbbff85a3c669a5ec7c0a29b22135160}} 
+\index{btTools::Entity@{btTools::Entity}!model@{model}}
+\index{model@{model}!btTools::Entity@{btTools::Entity}}
+\subsubsection{model}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$\textbf{ Model}$>$ bt\+Tools\+::\+Entity\+::model}
+
+Modelo grafico de la entidad. \mbox{\label{classbt_tools_1_1_entity_a9c14bed7b440320e4b2afab8ddd84c95}} 
+\index{btTools::Entity@{btTools::Entity}!physics\_transform@{physics\_transform}}
+\index{physics\_transform@{physics\_transform}!btTools::Entity@{btTools::Entity}}
+\subsubsection{physics\_transform}
+{\footnotesize\ttfamily bt\+Transform bt\+Tools\+::\+Entity\+::physics\+\_\+transform}
+
+Transform al que se le aplica las fisicas de bullet. \mbox{\label{classbt_tools_1_1_entity_aefa19fe429e537d5d5b1f13657eead3f}} 
+\index{btTools::Entity@{btTools::Entity}!state@{state}}
+\index{state@{state}!btTools::Entity@{btTools::Entity}}
+\subsubsection{state}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ bt\+Default\+Motion\+State $>$ bt\+Tools\+::\+Entity\+::state}
+
+Motion state de la entidad. \mbox{\label{classbt_tools_1_1_entity_a3d430262857bbfe4ee9ccccb141cf4f3}} 
+\index{btTools::Entity@{btTools::Entity}!worldP@{worldP}}
+\index{worldP@{worldP}!btTools::Entity@{btTools::Entity}}
+\subsubsection{worldP}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ bt\+Discrete\+Dynamics\+World$>$ bt\+Tools\+::\+Entity\+::worldP}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+code/headers/\textbf{ Entity.\+hpp}\item 
+code/sources/\textbf{ Entity.\+cpp}\end{DoxyCompactItemize}

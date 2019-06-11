@@ -1,0 +1,188 @@
+\section{example\+::Camera Class Reference}
+\label{classexample_1_1_camera}\index{example::Camera@{example::Camera}}
+
+
+{\ttfamily \#include $<$Camera.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Camera} (float ratio=1.f)
+\item 
+\textbf{ Camera} (float near\+\_\+z, float far\+\_\+z, float ratio=1.f)
+\item 
+\textbf{ Camera} (float fov, float near\+\_\+z, float far\+\_\+z, float ratio)
+\item 
+float \textbf{ get\+\_\+fov} () const
+\item 
+float \textbf{ get\+\_\+near\+\_\+z} () const
+\item 
+float \textbf{ get\+\_\+far\+\_\+z} () const
+\item 
+float \textbf{ get\+\_\+ratio} () const
+\item 
+const Point \& \textbf{ get\+\_\+location} () const
+\item 
+const Point \& \textbf{ get\+\_\+target} () const
+\item 
+const glm\+::vec3 \& \textbf{ get\+\_\+targetv3} () const
+\item 
+void \textbf{ set\+\_\+fov} (float new\+\_\+fov)
+\item 
+void \textbf{ set\+\_\+near\+\_\+z} (float new\+\_\+near\+\_\+z)
+\item 
+void \textbf{ set\+\_\+far\+\_\+z} (float new\+\_\+far\+\_\+z)
+\item 
+void \textbf{ set\+\_\+ratio} (float new\+\_\+ratio)
+\item 
+void \textbf{ set\+\_\+location} (float x, float y, float z)
+\item 
+void \textbf{ set\+\_\+target} (float x, float y, float z)
+\item 
+void \textbf{ reset} (float new\+\_\+fov, float new\+\_\+near\+\_\+z, float new\+\_\+far\+\_\+z, float new\+\_\+ratio)
+\item 
+void \textbf{ move} (const glm\+::vec3 \&translation)
+\item 
+void \textbf{ rotate} (const glm\+::mat4 \&rotation)
+\item 
+glm\+::mat4 \textbf{ get\+\_\+projection} () const
+\item 
+glm\+::mat4 \textbf{ get\+\_\+model\+\_\+view} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{classexample_1_1_camera_af7baaae5fda716b71356ce0d36cb5856}} 
+\index{example::Camera@{example::Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!example::Camera@{example::Camera}}
+\subsubsection{Camera()\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily example\+::\+Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{float}]{ratio = {\ttfamily 1.f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_camera_ae9996fd414d9ea3b212d10fc736d08e4}} 
+\index{example::Camera@{example::Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!example::Camera@{example::Camera}}
+\subsubsection{Camera()\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily example\+::\+Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{float}]{near\+\_\+z,  }\item[{float}]{far\+\_\+z,  }\item[{float}]{ratio = {\ttfamily 1.f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_camera_af7f8bfa29635307a57c5abe94225a3c6}} 
+\index{example::Camera@{example::Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!example::Camera@{example::Camera}}
+\subsubsection{Camera()\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily example\+::\+Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{float}]{fov,  }\item[{float}]{near\+\_\+z,  }\item[{float}]{far\+\_\+z,  }\item[{float}]{ratio }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{classexample_1_1_camera_a9bdb46b1257a2fc4dc57ccdf83e2b2f7}} 
+\index{example::Camera@{example::Camera}!get\_far\_z@{get\_far\_z}}
+\index{get\_far\_z@{get\_far\_z}!example::Camera@{example::Camera}}
+\subsubsection{get\_far\_z()}
+{\footnotesize\ttfamily float example\+::\+Camera\+::get\+\_\+far\+\_\+z (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_camera_a036d3963a777f5ba79dc71d8809dfa2d}} 
+\index{example::Camera@{example::Camera}!get\_fov@{get\_fov}}
+\index{get\_fov@{get\_fov}!example::Camera@{example::Camera}}
+\subsubsection{get\_fov()}
+{\footnotesize\ttfamily float example\+::\+Camera\+::get\+\_\+fov (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_camera_a50cd7e64453f10fb278c399cac6dfc21}} 
+\index{example::Camera@{example::Camera}!get\_location@{get\_location}}
+\index{get\_location@{get\_location}!example::Camera@{example::Camera}}
+\subsubsection{get\_location()}
+{\footnotesize\ttfamily const Point\& example\+::\+Camera\+::get\+\_\+location (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_camera_a7e95b2f8f11b40c1ab05def2f1899338}} 
+\index{example::Camera@{example::Camera}!get\_model\_view@{get\_model\_view}}
+\index{get\_model\_view@{get\_model\_view}!example::Camera@{example::Camera}}
+\subsubsection{get\_model\_view()}
+{\footnotesize\ttfamily glm\+::mat4 example\+::\+Camera\+::get\+\_\+model\+\_\+view (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_camera_ae61da628123c5b4c6f37913c2f640604}} 
+\index{example::Camera@{example::Camera}!get\_near\_z@{get\_near\_z}}
+\index{get\_near\_z@{get\_near\_z}!example::Camera@{example::Camera}}
+\subsubsection{get\_near\_z()}
+{\footnotesize\ttfamily float example\+::\+Camera\+::get\+\_\+near\+\_\+z (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_camera_ab30b27febf3449c284eba6bb0d693910}} 
+\index{example::Camera@{example::Camera}!get\_projection@{get\_projection}}
+\index{get\_projection@{get\_projection}!example::Camera@{example::Camera}}
+\subsubsection{get\_projection()}
+{\footnotesize\ttfamily glm\+::mat4 example\+::\+Camera\+::get\+\_\+projection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_camera_a422ce687afdc941ca49fe54527bcd424}} 
+\index{example::Camera@{example::Camera}!get\_ratio@{get\_ratio}}
+\index{get\_ratio@{get\_ratio}!example::Camera@{example::Camera}}
+\subsubsection{get\_ratio()}
+{\footnotesize\ttfamily float example\+::\+Camera\+::get\+\_\+ratio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_camera_a559bad945679ef774c9979e45880c9dc}} 
+\index{example::Camera@{example::Camera}!get\_target@{get\_target}}
+\index{get\_target@{get\_target}!example::Camera@{example::Camera}}
+\subsubsection{get\_target()}
+{\footnotesize\ttfamily const Point\& example\+::\+Camera\+::get\+\_\+target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_camera_a3286fb3236ba5981fae1aa40eb552744}} 
+\index{example::Camera@{example::Camera}!get\_targetv3@{get\_targetv3}}
+\index{get\_targetv3@{get\_targetv3}!example::Camera@{example::Camera}}
+\subsubsection{get\_targetv3()}
+{\footnotesize\ttfamily const glm\+::vec3\& example\+::\+Camera\+::get\+\_\+targetv3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_camera_a076f2b136b38a50738827c93712689e4}} 
+\index{example::Camera@{example::Camera}!move@{move}}
+\index{move@{move}!example::Camera@{example::Camera}}
+\subsubsection{move()}
+{\footnotesize\ttfamily void example\+::\+Camera\+::move (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{translation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_camera_a5c8b855f8570626c91bc25f7014fb90e}} 
+\index{example::Camera@{example::Camera}!reset@{reset}}
+\index{reset@{reset}!example::Camera@{example::Camera}}
+\subsubsection{reset()}
+{\footnotesize\ttfamily void example\+::\+Camera\+::reset (\begin{DoxyParamCaption}\item[{float}]{new\+\_\+fov,  }\item[{float}]{new\+\_\+near\+\_\+z,  }\item[{float}]{new\+\_\+far\+\_\+z,  }\item[{float}]{new\+\_\+ratio }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_camera_af87e314b23ccc6462b27985eb1d648b4}} 
+\index{example::Camera@{example::Camera}!rotate@{rotate}}
+\index{rotate@{rotate}!example::Camera@{example::Camera}}
+\subsubsection{rotate()}
+{\footnotesize\ttfamily void example\+::\+Camera\+::rotate (\begin{DoxyParamCaption}\item[{const glm\+::mat4 \&}]{rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_camera_a3121b4ab410738a97cb36ea37bb38a65}} 
+\index{example::Camera@{example::Camera}!set\_far\_z@{set\_far\_z}}
+\index{set\_far\_z@{set\_far\_z}!example::Camera@{example::Camera}}
+\subsubsection{set\_far\_z()}
+{\footnotesize\ttfamily void example\+::\+Camera\+::set\+\_\+far\+\_\+z (\begin{DoxyParamCaption}\item[{float}]{new\+\_\+far\+\_\+z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_camera_abd6281e8951e0080e41823e804f55bb5}} 
+\index{example::Camera@{example::Camera}!set\_fov@{set\_fov}}
+\index{set\_fov@{set\_fov}!example::Camera@{example::Camera}}
+\subsubsection{set\_fov()}
+{\footnotesize\ttfamily void example\+::\+Camera\+::set\+\_\+fov (\begin{DoxyParamCaption}\item[{float}]{new\+\_\+fov }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_camera_abcfe34f1adaf8be11c871ae8d9d10385}} 
+\index{example::Camera@{example::Camera}!set\_location@{set\_location}}
+\index{set\_location@{set\_location}!example::Camera@{example::Camera}}
+\subsubsection{set\_location()}
+{\footnotesize\ttfamily void example\+::\+Camera\+::set\+\_\+location (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_camera_af112b80e00c374d3c2dd74d776222234}} 
+\index{example::Camera@{example::Camera}!set\_near\_z@{set\_near\_z}}
+\index{set\_near\_z@{set\_near\_z}!example::Camera@{example::Camera}}
+\subsubsection{set\_near\_z()}
+{\footnotesize\ttfamily void example\+::\+Camera\+::set\+\_\+near\+\_\+z (\begin{DoxyParamCaption}\item[{float}]{new\+\_\+near\+\_\+z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_camera_a30aa3059c5ca9c5796b835bc5881dda1}} 
+\index{example::Camera@{example::Camera}!set\_ratio@{set\_ratio}}
+\index{set\_ratio@{set\_ratio}!example::Camera@{example::Camera}}
+\subsubsection{set\_ratio()}
+{\footnotesize\ttfamily void example\+::\+Camera\+::set\+\_\+ratio (\begin{DoxyParamCaption}\item[{float}]{new\+\_\+ratio }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_camera_a79232d58b96672593124b28c5c1aafa3}} 
+\index{example::Camera@{example::Camera}!set\_target@{set\_target}}
+\index{set\_target@{set\_target}!example::Camera@{example::Camera}}
+\subsubsection{set\_target()}
+{\footnotesize\ttfamily void example\+::\+Camera\+::set\+\_\+target (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+code/headers/\textbf{ Camera.\+hpp}\end{DoxyCompactItemize}

@@ -17,7 +17,7 @@ extern "C"
     #include <targa.h>
 }
 
-namespace example
+namespace glTools
 {
 
     typedef Color_Buffer_Rgba8888 Buffer;

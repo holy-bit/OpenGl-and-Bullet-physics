@@ -13,7 +13,7 @@
 #include "Cube.hpp"
 #include <SFML/OpenGL.hpp>
 
-namespace example
+namespace glTools
 {
 
     const GLfloat Cube::coordinates[] =

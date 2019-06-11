@@ -19,7 +19,7 @@
     #include <GL/glew.h>
     #include <Non_Copyable.hpp>
 
-    namespace example
+    namespace glTools
     {
 
         class Shader 

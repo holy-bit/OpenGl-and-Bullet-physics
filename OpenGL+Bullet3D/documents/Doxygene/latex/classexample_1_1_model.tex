@@ -1,0 +1,228 @@
+\section{example\+::Model Class Reference}
+\label{classexample_1_1_model}\index{example::Model@{example::Model}}
+
+
+{\ttfamily \#include $<$Model.\+hpp$>$}
+
+Inheritance diagram for example\+::Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classexample_1_1_model}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Model} (glm\+::vec3 location=\{0, 0, 0\}, glm\+::vec3 scale=\{ 1, 1, 1 \}, glm\+::vec3 rotation=\{ 0, 0, 0 \}, float mass\+\_\+p=0)
+\item 
+const Piece\+\_\+\+List \& \textbf{ get\+\_\+pieces} () const
+\item 
+void \textbf{ add} (const std\+::shared\+\_\+ptr$<$ \textbf{ Mesh} $>$ \&mesh)
+\item 
+void \textbf{ rotate\+\_\+around\+\_\+x} (float angle)
+\item 
+void \textbf{ rotate\+\_\+around\+\_\+y} (float angle)
+\item 
+void \textbf{ rotate\+\_\+around\+\_\+z} (float angle)
+\item 
+std\+::list$<$ \textbf{ Mesh} $>$ \& \textbf{ get\+\_\+meshes} ()
+\item 
+void \textbf{ set\+Parent} (\textbf{ Model} \&parent\+\_\+parameteer)
+\item 
+\textbf{ Model} $\ast$ \textbf{ get\+Model} ()
+\item 
+glm\+::mat4 \textbf{ Get\+Transform\+Matrix} (const \textbf{ Camera} \&camera)
+\item 
+void \textbf{ update} (const \textbf{ Camera} \&camera)
+\item 
+void \textbf{ render} (const \textbf{ Camera} \&camera)
+\item 
+void \textbf{ Set\+Shader\+Values} (const \textbf{ Camera} \&camera)
+\item 
+void \textbf{ configure\+\_\+material} (G\+Luint program\+\_\+id)
+\item 
+void \textbf{ configure\+\_\+light} (G\+Luint program\+\_\+id)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \textbf{ is\+Entity}
+\item 
+float \textbf{ mass}
+\item 
+\textbf{ Model} $\ast$ \textbf{ parent} = nullptr
+\item 
+Transform \textbf{ transform}
+\item 
+G\+Lint \textbf{ model\+\_\+view\+\_\+matrix\+\_\+id}
+\item 
+G\+Lint \textbf{ projection\+\_\+matrix\+\_\+id}
+\item 
+G\+Lint \textbf{ normal\+\_\+matrix\+\_\+id}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{classexample_1_1_model_afa157afc835b35c76a261b2b388d8d6f}} 
+\index{example::Model@{example::Model}!Model@{Model}}
+\index{Model@{Model}!example::Model@{example::Model}}
+\subsubsection{Model()}
+{\footnotesize\ttfamily example\+::\+Model\+::\+Model (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{location = {\ttfamily \{0,0,0\}},  }\item[{glm\+::vec3}]{scale = {\ttfamily \{~1,1,1~\}},  }\item[{glm\+::vec3}]{rotation = {\ttfamily \{~0,0,0~\}},  }\item[{float}]{mass\+\_\+p = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{classexample_1_1_model_a97575d40c10929e02b0b8dfbc1a926d3}} 
+\index{example::Model@{example::Model}!add@{add}}
+\index{add@{add}!example::Model@{example::Model}}
+\subsubsection{add()}
+{\footnotesize\ttfamily void example\+::\+Model\+::add (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \textbf{ Mesh} $>$ \&}]{mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_model_a6700d419bbf173440144f9ba7f3e997f}} 
+\index{example::Model@{example::Model}!configure\_light@{configure\_light}}
+\index{configure\_light@{configure\_light}!example::Model@{example::Model}}
+\subsubsection{configure\_light()}
+{\footnotesize\ttfamily void example\+::\+Model\+::configure\+\_\+light (\begin{DoxyParamCaption}\item[{G\+Luint}]{program\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_model_a438576932520d48805283194da85d5d5}} 
+\index{example::Model@{example::Model}!configure\_material@{configure\_material}}
+\index{configure\_material@{configure\_material}!example::Model@{example::Model}}
+\subsubsection{configure\_material()}
+{\footnotesize\ttfamily void example\+::\+Model\+::configure\+\_\+material (\begin{DoxyParamCaption}\item[{G\+Luint}]{program\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_model_adf068cfc1a2f769334401d02881a4924}} 
+\index{example::Model@{example::Model}!get\_meshes@{get\_meshes}}
+\index{get\_meshes@{get\_meshes}!example::Model@{example::Model}}
+\subsubsection{get\_meshes()}
+{\footnotesize\ttfamily std\+::list$<$\textbf{ Mesh}$>$\& example\+::\+Model\+::get\+\_\+meshes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_model_abb215d07b750ba96146ade46428211da}} 
+\index{example::Model@{example::Model}!get\_pieces@{get\_pieces}}
+\index{get\_pieces@{get\_pieces}!example::Model@{example::Model}}
+\subsubsection{get\_pieces()}
+{\footnotesize\ttfamily const Piece\+\_\+\+List\& example\+::\+Model\+::get\+\_\+pieces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Devuelve la lista de mallas que posee el modelo. \mbox{\label{classexample_1_1_model_a3f83759049d788d222e76e610ac7d780}} 
+\index{example::Model@{example::Model}!getModel@{getModel}}
+\index{getModel@{getModel}!example::Model@{example::Model}}
+\subsubsection{getModel()}
+{\footnotesize\ttfamily \textbf{ Model}$\ast$ example\+::\+Model\+::get\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Retorna puntero de este modelo. \mbox{\label{classexample_1_1_model_a60edf5c19511f7629193048c4b97000d}} 
+\index{example::Model@{example::Model}!GetTransformMatrix@{GetTransformMatrix}}
+\index{GetTransformMatrix@{GetTransformMatrix}!example::Model@{example::Model}}
+\subsubsection{GetTransformMatrix()}
+{\footnotesize\ttfamily glm\+::mat4 example\+::\+Model\+::\+Get\+Transform\+Matrix (\begin{DoxyParamCaption}\item[{const \textbf{ Camera} \&}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_model_ae83347d4ec78eef6db285d9a3d59f3b4}} 
+\index{example::Model@{example::Model}!render@{render}}
+\index{render@{render}!example::Model@{example::Model}}
+\subsubsection{render()}
+{\footnotesize\ttfamily void example\+::\+Model\+::render (\begin{DoxyParamCaption}\item[{const \textbf{ Camera} \&}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_model_ae24b7da5abe7cf8bf5f651a307253446}} 
+\index{example::Model@{example::Model}!rotate\_around\_x@{rotate\_around\_x}}
+\index{rotate\_around\_x@{rotate\_around\_x}!example::Model@{example::Model}}
+\subsubsection{rotate\_around\_x()}
+{\footnotesize\ttfamily void example\+::\+Model\+::rotate\+\_\+around\+\_\+x (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Aplica rotacion en el eje X 
+\begin{DoxyParams}{Parameters}
+{\em float} & angulo al que va a rotar; \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classexample_1_1_model_a34b9a4fe40961a5aaaf0a508c0fbcf86}} 
+\index{example::Model@{example::Model}!rotate\_around\_y@{rotate\_around\_y}}
+\index{rotate\_around\_y@{rotate\_around\_y}!example::Model@{example::Model}}
+\subsubsection{rotate\_around\_y()}
+{\footnotesize\ttfamily void example\+::\+Model\+::rotate\+\_\+around\+\_\+y (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Aplica rotacion en el eje Y 
+\begin{DoxyParams}{Parameters}
+{\em float} & angulo al que va a rotar; \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classexample_1_1_model_a5fa0b7b46f0e83b9a9a8bf1622c0b5fd}} 
+\index{example::Model@{example::Model}!rotate\_around\_z@{rotate\_around\_z}}
+\index{rotate\_around\_z@{rotate\_around\_z}!example::Model@{example::Model}}
+\subsubsection{rotate\_around\_z()}
+{\footnotesize\ttfamily void example\+::\+Model\+::rotate\+\_\+around\+\_\+z (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Aplica rotacion en el eje Z 
+\begin{DoxyParams}{Parameters}
+{\em float} & angulo al que va a rotar; \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classexample_1_1_model_a8f0a3fb42ec65006716f185390a27d74}} 
+\index{example::Model@{example::Model}!setParent@{setParent}}
+\index{setParent@{setParent}!example::Model@{example::Model}}
+\subsubsection{setParent()}
+{\footnotesize\ttfamily void example\+::\+Model\+::set\+Parent (\begin{DoxyParamCaption}\item[{\textbf{ Model} \&}]{parent\+\_\+parameteer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Establece un puntero al modelo que va a ser el padre. 
+\begin{DoxyParams}{Parameters}
+{\em Model$\ast$} & Puntero al modelo padre. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classexample_1_1_model_add60614234261cd0d73e59ffa557bf53}} 
+\index{example::Model@{example::Model}!SetShaderValues@{SetShaderValues}}
+\index{SetShaderValues@{SetShaderValues}!example::Model@{example::Model}}
+\subsubsection{SetShaderValues()}
+{\footnotesize\ttfamily void example\+::\+Model\+::\+Set\+Shader\+Values (\begin{DoxyParamCaption}\item[{const \textbf{ Camera} \&}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_model_a1abb2f70baaf3ae10bb804802d42c413}} 
+\index{example::Model@{example::Model}!update@{update}}
+\index{update@{update}!example::Model@{example::Model}}
+\subsubsection{update()}
+{\footnotesize\ttfamily void example\+::\+Model\+::update (\begin{DoxyParamCaption}\item[{const \textbf{ Camera} \&}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\label{classexample_1_1_model_a200b4ea90e32c7d87e0523d57e21dd14}} 
+\index{example::Model@{example::Model}!isEntity@{isEntity}}
+\index{isEntity@{isEntity}!example::Model@{example::Model}}
+\subsubsection{isEntity}
+{\footnotesize\ttfamily bool example\+::\+Model\+::is\+Entity}
+
+\mbox{\label{classexample_1_1_model_ac976579cd8fffd0ec301435671d7a444}} 
+\index{example::Model@{example::Model}!mass@{mass}}
+\index{mass@{mass}!example::Model@{example::Model}}
+\subsubsection{mass}
+{\footnotesize\ttfamily float example\+::\+Model\+::mass}
+
+\mbox{\label{classexample_1_1_model_a00a4822249021421e9208d71b42f62b7}} 
+\index{example::Model@{example::Model}!model\_view\_matrix\_id@{model\_view\_matrix\_id}}
+\index{model\_view\_matrix\_id@{model\_view\_matrix\_id}!example::Model@{example::Model}}
+\subsubsection{model\_view\_matrix\_id}
+{\footnotesize\ttfamily G\+Lint example\+::\+Model\+::model\+\_\+view\+\_\+matrix\+\_\+id}
+
+\mbox{\label{classexample_1_1_model_a7bbffb2f5d7b6c5664166b0e8cc7886a}} 
+\index{example::Model@{example::Model}!normal\_matrix\_id@{normal\_matrix\_id}}
+\index{normal\_matrix\_id@{normal\_matrix\_id}!example::Model@{example::Model}}
+\subsubsection{normal\_matrix\_id}
+{\footnotesize\ttfamily G\+Lint example\+::\+Model\+::normal\+\_\+matrix\+\_\+id}
+
+\mbox{\label{classexample_1_1_model_a155903d240d3ca4bda81b00d19a0f1b0}} 
+\index{example::Model@{example::Model}!parent@{parent}}
+\index{parent@{parent}!example::Model@{example::Model}}
+\subsubsection{parent}
+{\footnotesize\ttfamily \textbf{ Model}$\ast$ example\+::\+Model\+::parent = nullptr}
+
+Puntero al modelo padre. \mbox{\label{classexample_1_1_model_a27350f6bf650caf77e0f3cb028febab6}} 
+\index{example::Model@{example::Model}!projection\_matrix\_id@{projection\_matrix\_id}}
+\index{projection\_matrix\_id@{projection\_matrix\_id}!example::Model@{example::Model}}
+\subsubsection{projection\_matrix\_id}
+{\footnotesize\ttfamily G\+Lint example\+::\+Model\+::projection\+\_\+matrix\+\_\+id}
+
+\mbox{\label{classexample_1_1_model_ac212587da9b10b3cd5222dd3136c071c}} 
+\index{example::Model@{example::Model}!transform@{transform}}
+\index{transform@{transform}!example::Model@{example::Model}}
+\subsubsection{transform}
+{\footnotesize\ttfamily Transform example\+::\+Model\+::transform}
+
+Transform que contiene las distintas transformaciones del modelo 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+code/headers/\textbf{ Model.\+hpp}\end{DoxyCompactItemize}

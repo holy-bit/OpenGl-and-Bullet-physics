@@ -1,0 +1,383 @@
+\section{gl\+Tools\+::Model Class Reference}
+\label{classgl_tools_1_1_model}\index{glTools::Model@{glTools::Model}}
+
+
+{\ttfamily \#include $<$Model.\+hpp$>$}
+
+Inheritance diagram for gl\+Tools\+::Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgl_tools_1_1_model}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Model} (glm\+::vec3 location=\{0, 0, 0\}, glm\+::vec3 scale=\{ 1, 1, 1 \}, glm\+::vec3 rotation=\{ 0, 0, 0 \}, float mass\+\_\+p=0)
+\begin{DoxyCompactList}\small\item\em Crea el modelo estableciendo sus valores de transformacion. \end{DoxyCompactList}\item 
+void \textbf{ rotate\+\_\+around\+\_\+x} (float angle)
+\begin{DoxyCompactList}\small\item\em Aplica rotacion en el eje X. \end{DoxyCompactList}\item 
+void \textbf{ rotate\+\_\+around\+\_\+y} (float angle)
+\begin{DoxyCompactList}\small\item\em Aplica rotacion en el eje Y. \end{DoxyCompactList}\item 
+void \textbf{ rotate\+\_\+around\+\_\+z} (float angle)
+\begin{DoxyCompactList}\small\item\em Aplica rotacion en el eje Z. \end{DoxyCompactList}\item 
+std\+::list$<$ \textbf{ Mesh} $>$ \& \textbf{ get\+\_\+meshes} ()
+\begin{DoxyCompactList}\small\item\em Devuelve la lista de mallas del modelo. \end{DoxyCompactList}\item 
+void \textbf{ set\+Parent} (\textbf{ Model} \&parent\+\_\+parameter)
+\begin{DoxyCompactList}\small\item\em Establece un puntero al modelo que va a ser el padre. \end{DoxyCompactList}\item 
+glm\+::mat4 \textbf{ Get\+Transform\+Matrix} (const \textbf{ Camera} \&camera)
+\begin{DoxyCompactList}\small\item\em Calcula la matriz de transformacion. \end{DoxyCompactList}\item 
+void \textbf{ update} (const \textbf{ Camera} \&camera)
+\begin{DoxyCompactList}\small\item\em Actualiza el modelo. \end{DoxyCompactList}\item 
+void \textbf{ render} (const \textbf{ Camera} \&camera)
+\begin{DoxyCompactList}\small\item\em Dibuja el modelo. \end{DoxyCompactList}\item 
+void \textbf{ Set\+Shader\+Values} (const \textbf{ Camera} \&camera)
+\begin{DoxyCompactList}\small\item\em Asigna los valores al shader. \end{DoxyCompactList}\item 
+void \textbf{ configure\+\_\+material} (G\+Luint program\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Configura el material que se le aplicara al modelo. \end{DoxyCompactList}\item 
+void \textbf{ configure\+\_\+light} (G\+Luint program\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Configura la luz que se le aplicara al modelo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \textbf{ is\+Entity}
+\item 
+float \textbf{ mass}
+\item 
+\textbf{ Model} $\ast$ \textbf{ parent} = nullptr
+\item 
+Transform \textbf{ transform}
+\item 
+G\+Lint \textbf{ model\+\_\+view\+\_\+matrix\+\_\+id}
+\item 
+G\+Lint \textbf{ projection\+\_\+matrix\+\_\+id}
+\item 
+G\+Lint \textbf{ normal\+\_\+matrix\+\_\+id}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{classgl_tools_1_1_model_a354cace71c4ca1df976ef63cb1643799}} 
+\index{glTools::Model@{glTools::Model}!Model@{Model}}
+\index{Model@{Model}!glTools::Model@{glTools::Model}}
+\subsubsection{Model()}
+{\footnotesize\ttfamily gl\+Tools\+::\+Model\+::\+Model (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{location = {\ttfamily \{0,0,0\}},  }\item[{glm\+::vec3}]{scale = {\ttfamily \{~1,1,1~\}},  }\item[{glm\+::vec3}]{rotation = {\ttfamily \{~0,0,0~\}},  }\item[{float}]{mass\+\_\+p = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Crea el modelo estableciendo sus valores de transformacion. 
+
+{\bfseries{Method\+: }} \doxyref{Model}{p.}{classgl_tools_1_1_model}
+
+{\bfseries{Full\+Name\+:}} \doxyref{gl\+Tools\+::\+Model\+::\+Model}{p.}{classgl_tools_1_1_model_a354cace71c4ca1df976ef63cb1643799}
+
+{\bfseries{Access\+: }} public 
+\begin{DoxyParams}{Parameters}
+{\em glm\+::vec3} & location \\
+\hline
+{\em glm\+::vec3} & scale \\
+\hline
+{\em glm\+::vec3} & rotation \\
+\hline
+{\em float} & mass\+\_\+p \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{classgl_tools_1_1_model_af02f8148dc3991cba71cd2879b882180}} 
+\index{glTools::Model@{glTools::Model}!configure\_light@{configure\_light}}
+\index{configure\_light@{configure\_light}!glTools::Model@{glTools::Model}}
+\subsubsection{configure\_light()}
+{\footnotesize\ttfamily void gl\+Tools\+::\+Model\+::configure\+\_\+light (\begin{DoxyParamCaption}\item[{G\+Luint}]{program\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Configura la luz que se le aplicara al modelo. 
+
+{\bfseries{Method\+: }} configure\+\_\+light
+
+{\bfseries{Full\+Name\+:}} \doxyref{gl\+Tools\+::\+Model\+::configure\+\_\+light}{p.}{classgl_tools_1_1_model_af02f8148dc3991cba71cd2879b882180}
+
+{\bfseries{Access\+: }} public 
+\begin{DoxyParams}{Parameters}
+{\em G\+Luint} & program\+\_\+id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\label{classgl_tools_1_1_model_a79967fbea65fb80a17e3651d55203b60}} 
+\index{glTools::Model@{glTools::Model}!configure\_material@{configure\_material}}
+\index{configure\_material@{configure\_material}!glTools::Model@{glTools::Model}}
+\subsubsection{configure\_material()}
+{\footnotesize\ttfamily void gl\+Tools\+::\+Model\+::configure\+\_\+material (\begin{DoxyParamCaption}\item[{G\+Luint}]{program\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Configura el material que se le aplicara al modelo. 
+
+{\bfseries{Method\+: }} configure\+\_\+material
+
+{\bfseries{Full\+Name\+:}} \doxyref{gl\+Tools\+::\+Model\+::configure\+\_\+material}{p.}{classgl_tools_1_1_model_a79967fbea65fb80a17e3651d55203b60}
+
+{\bfseries{Access\+: }} public 
+\begin{DoxyParams}{Parameters}
+{\em G\+Luint} & program\+\_\+id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\label{classgl_tools_1_1_model_a6be3d6ba67a201dfda2c5b3b6e11ac12}} 
+\index{glTools::Model@{glTools::Model}!get\_meshes@{get\_meshes}}
+\index{get\_meshes@{get\_meshes}!glTools::Model@{glTools::Model}}
+\subsubsection{get\_meshes()}
+{\footnotesize\ttfamily std\+::list$<$ \textbf{ gl\+Tools\+::\+Mesh} $>$ \& gl\+Tools\+::\+Model\+::get\+\_\+meshes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve la lista de mallas del modelo. 
+
+{\bfseries{Method\+: }} get\+\_\+meshes
+
+{\bfseries{Full\+Name\+:}} \doxyref{gl\+Tools\+::\+Model\+::get\+\_\+meshes}{p.}{classgl_tools_1_1_model_a6be3d6ba67a201dfda2c5b3b6e11ac12}
+
+{\bfseries{Access\+: }} public \begin{DoxyReturn}{Returns}
+std\+::list$<$gl\+Tools\+::\+Mesh$>$\& 
+\end{DoxyReturn}
+\mbox{\label{classgl_tools_1_1_model_a7f54099231cff5687be475a1ca632c9c}} 
+\index{glTools::Model@{glTools::Model}!GetTransformMatrix@{GetTransformMatrix}}
+\index{GetTransformMatrix@{GetTransformMatrix}!glTools::Model@{glTools::Model}}
+\subsubsection{GetTransformMatrix()}
+{\footnotesize\ttfamily glm\+::mat4 gl\+Tools\+::\+Model\+::\+Get\+Transform\+Matrix (\begin{DoxyParamCaption}\item[{const \textbf{ Camera} \&}]{camera }\end{DoxyParamCaption})}
+
+
+
+Calcula la matriz de transformacion. 
+
+{\bfseries{Method\+: }} Get\+Transform\+Matrix
+
+{\bfseries{Full\+Name\+:}} \doxyref{gl\+Tools\+::\+Model\+::\+Get\+Transform\+Matrix}{p.}{classgl_tools_1_1_model_a7f54099231cff5687be475a1ca632c9c}
+
+{\bfseries{Access\+: }} public 
+\begin{DoxyParams}{Parameters}
+{\em const} & \doxyref{Camera}{p.}{classgl_tools_1_1_camera} \& camera \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+glm\+::mat4 
+\end{DoxyReturn}
+\mbox{\label{classgl_tools_1_1_model_af40ad0fcc1c334c8d3eb9322ec787a8f}} 
+\index{glTools::Model@{glTools::Model}!render@{render}}
+\index{render@{render}!glTools::Model@{glTools::Model}}
+\subsubsection{render()}
+{\footnotesize\ttfamily void gl\+Tools\+::\+Model\+::render (\begin{DoxyParamCaption}\item[{const \textbf{ Camera} \&}]{camera }\end{DoxyParamCaption})}
+
+
+
+Dibuja el modelo. 
+
+{\bfseries{Method\+: }} render
+
+{\bfseries{Full\+Name\+:}} \doxyref{gl\+Tools\+::\+Model\+::render}{p.}{classgl_tools_1_1_model_af40ad0fcc1c334c8d3eb9322ec787a8f}
+
+{\bfseries{Access\+: }} public 
+\begin{DoxyParams}{Parameters}
+{\em const} & \doxyref{Camera}{p.}{classgl_tools_1_1_camera} \& camera \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\label{classgl_tools_1_1_model_ad9ef51df3cb0bed4aa6db1a0a7c10613}} 
+\index{glTools::Model@{glTools::Model}!rotate\_around\_x@{rotate\_around\_x}}
+\index{rotate\_around\_x@{rotate\_around\_x}!glTools::Model@{glTools::Model}}
+\subsubsection{rotate\_around\_x()}
+{\footnotesize\ttfamily void gl\+Tools\+::\+Model\+::rotate\+\_\+around\+\_\+x (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})}
+
+
+
+Aplica rotacion en el eje X. 
+
+{\bfseries{Method\+: }} rotate\+\_\+around\+\_\+x
+
+{\bfseries{Full\+Name\+:}} \doxyref{gl\+Tools\+::\+Model\+::rotate\+\_\+around\+\_\+x}{p.}{classgl_tools_1_1_model_ad9ef51df3cb0bed4aa6db1a0a7c10613}
+
+{\bfseries{Access\+: }} public 
+\begin{DoxyParams}{Parameters}
+{\em float} & angle angulo al que va a rotar; \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\label{classgl_tools_1_1_model_adae4748e64cd62737dd24dc7d1f01d65}} 
+\index{glTools::Model@{glTools::Model}!rotate\_around\_y@{rotate\_around\_y}}
+\index{rotate\_around\_y@{rotate\_around\_y}!glTools::Model@{glTools::Model}}
+\subsubsection{rotate\_around\_y()}
+{\footnotesize\ttfamily void gl\+Tools\+::\+Model\+::rotate\+\_\+around\+\_\+y (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})}
+
+
+
+Aplica rotacion en el eje Y. 
+
+{\bfseries{Method\+: }} rotate\+\_\+around\+\_\+y
+
+{\bfseries{Full\+Name\+:}} \doxyref{gl\+Tools\+::\+Model\+::rotate\+\_\+around\+\_\+y}{p.}{classgl_tools_1_1_model_adae4748e64cd62737dd24dc7d1f01d65}
+
+{\bfseries{Access\+: }} public 
+\begin{DoxyParams}{Parameters}
+{\em float} & angle angulo al que va a rotar; \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\label{classgl_tools_1_1_model_addc2417be17c781c1c89781ab3a4d6bc}} 
+\index{glTools::Model@{glTools::Model}!rotate\_around\_z@{rotate\_around\_z}}
+\index{rotate\_around\_z@{rotate\_around\_z}!glTools::Model@{glTools::Model}}
+\subsubsection{rotate\_around\_z()}
+{\footnotesize\ttfamily void gl\+Tools\+::\+Model\+::rotate\+\_\+around\+\_\+z (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})}
+
+
+
+Aplica rotacion en el eje Z. 
+
+{\bfseries{Method\+: }} rotate\+\_\+around\+\_\+z
+
+{\bfseries{Full\+Name\+:}} \doxyref{gl\+Tools\+::\+Model\+::rotate\+\_\+around\+\_\+z}{p.}{classgl_tools_1_1_model_addc2417be17c781c1c89781ab3a4d6bc}
+
+{\bfseries{Access\+: }} public 
+\begin{DoxyParams}{Parameters}
+{\em float} & angle angulo al que va a rotar; \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\label{classgl_tools_1_1_model_ad706a29a8fb3dec41011871612a20890}} 
+\index{glTools::Model@{glTools::Model}!setParent@{setParent}}
+\index{setParent@{setParent}!glTools::Model@{glTools::Model}}
+\subsubsection{setParent()}
+{\footnotesize\ttfamily void gl\+Tools\+::\+Model\+::set\+Parent (\begin{DoxyParamCaption}\item[{\textbf{ Model} \&}]{parent\+\_\+parameter }\end{DoxyParamCaption})}
+
+
+
+Establece un puntero al modelo que va a ser el padre. 
+
+Establece un puntero al modelo que va a ser el padre. 
+\begin{DoxyParams}{Parameters}
+{\em Model$\ast$} & Puntero al modelo padre.\\
+\hline
+\end{DoxyParams}
+{\bfseries{Method\+: }} set\+Parent
+
+{\bfseries{Full\+Name\+:}} \doxyref{gl\+Tools\+::\+Model\+::set\+Parent}{p.}{classgl_tools_1_1_model_ad706a29a8fb3dec41011871612a20890}
+
+{\bfseries{Access\+: }} public 
+\begin{DoxyParams}{Parameters}
+{\em \doxyref{Model}{p.}{classgl_tools_1_1_model}} & \& parent\+\_\+parameter Puntero al modelo padre. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\label{classgl_tools_1_1_model_a464ef505b0b31e8c38f11d76706069b3}} 
+\index{glTools::Model@{glTools::Model}!SetShaderValues@{SetShaderValues}}
+\index{SetShaderValues@{SetShaderValues}!glTools::Model@{glTools::Model}}
+\subsubsection{SetShaderValues()}
+{\footnotesize\ttfamily void gl\+Tools\+::\+Model\+::\+Set\+Shader\+Values (\begin{DoxyParamCaption}\item[{const \textbf{ Camera} \&}]{camera }\end{DoxyParamCaption})}
+
+
+
+Asigna los valores al shader. 
+
+{\bfseries{Method\+: }} Set\+Shader\+Values
+
+{\bfseries{Full\+Name\+:}} \doxyref{gl\+Tools\+::\+Model\+::\+Set\+Shader\+Values}{p.}{classgl_tools_1_1_model_a464ef505b0b31e8c38f11d76706069b3}
+
+{\bfseries{Access\+: }} public 
+\begin{DoxyParams}{Parameters}
+{\em const} & \doxyref{Camera}{p.}{classgl_tools_1_1_camera} \& camera \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\label{classgl_tools_1_1_model_a2a32927e703f584d55145830d9024035}} 
+\index{glTools::Model@{glTools::Model}!update@{update}}
+\index{update@{update}!glTools::Model@{glTools::Model}}
+\subsubsection{update()}
+{\footnotesize\ttfamily void gl\+Tools\+::\+Model\+::update (\begin{DoxyParamCaption}\item[{const \textbf{ Camera} \&}]{camera }\end{DoxyParamCaption})}
+
+
+
+Actualiza el modelo. 
+
+{\bfseries{Method\+: }} update
+
+{\bfseries{Full\+Name\+:}} \doxyref{gl\+Tools\+::\+Model\+::update}{p.}{classgl_tools_1_1_model_a2a32927e703f584d55145830d9024035}
+
+{\bfseries{Access\+: }} public 
+\begin{DoxyParams}{Parameters}
+{\em const} & \doxyref{Camera}{p.}{classgl_tools_1_1_camera} \& camera \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\label{classgl_tools_1_1_model_a3fa11a2e4cc30edf8135f8e50b77a3e5}} 
+\index{glTools::Model@{glTools::Model}!isEntity@{isEntity}}
+\index{isEntity@{isEntity}!glTools::Model@{glTools::Model}}
+\subsubsection{isEntity}
+{\footnotesize\ttfamily bool gl\+Tools\+::\+Model\+::is\+Entity}
+
+\mbox{\label{classgl_tools_1_1_model_a2c5e2346bd23863fe86a8e457eff3618}} 
+\index{glTools::Model@{glTools::Model}!mass@{mass}}
+\index{mass@{mass}!glTools::Model@{glTools::Model}}
+\subsubsection{mass}
+{\footnotesize\ttfamily float gl\+Tools\+::\+Model\+::mass}
+
+\mbox{\label{classgl_tools_1_1_model_a87f96770612c834f2de9f83194588ba5}} 
+\index{glTools::Model@{glTools::Model}!model\_view\_matrix\_id@{model\_view\_matrix\_id}}
+\index{model\_view\_matrix\_id@{model\_view\_matrix\_id}!glTools::Model@{glTools::Model}}
+\subsubsection{model\_view\_matrix\_id}
+{\footnotesize\ttfamily G\+Lint gl\+Tools\+::\+Model\+::model\+\_\+view\+\_\+matrix\+\_\+id}
+
+id del model\+\_\+view\+\_\+matrix del vertex\+\_\+shader \mbox{\label{classgl_tools_1_1_model_aeea532be63b5101abaab99c72db3ca7c}} 
+\index{glTools::Model@{glTools::Model}!normal\_matrix\_id@{normal\_matrix\_id}}
+\index{normal\_matrix\_id@{normal\_matrix\_id}!glTools::Model@{glTools::Model}}
+\subsubsection{normal\_matrix\_id}
+{\footnotesize\ttfamily G\+Lint gl\+Tools\+::\+Model\+::normal\+\_\+matrix\+\_\+id}
+
+id del normal\+\_\+matrix del vertex\+\_\+shader \mbox{\label{classgl_tools_1_1_model_a93194f1d797d0ddd18a90422e514374d}} 
+\index{glTools::Model@{glTools::Model}!parent@{parent}}
+\index{parent@{parent}!glTools::Model@{glTools::Model}}
+\subsubsection{parent}
+{\footnotesize\ttfamily \textbf{ Model}$\ast$ gl\+Tools\+::\+Model\+::parent = nullptr}
+
+Puntero al modelo padre. \mbox{\label{classgl_tools_1_1_model_ad6626e4876df12e19b27533867537bd2}} 
+\index{glTools::Model@{glTools::Model}!projection\_matrix\_id@{projection\_matrix\_id}}
+\index{projection\_matrix\_id@{projection\_matrix\_id}!glTools::Model@{glTools::Model}}
+\subsubsection{projection\_matrix\_id}
+{\footnotesize\ttfamily G\+Lint gl\+Tools\+::\+Model\+::projection\+\_\+matrix\+\_\+id}
+
+id del projection\+\_\+matrix del vertex\+\_\+shader \mbox{\label{classgl_tools_1_1_model_a5d98e3981c908127314f1be7688c427a}} 
+\index{glTools::Model@{glTools::Model}!transform@{transform}}
+\index{transform@{transform}!glTools::Model@{glTools::Model}}
+\subsubsection{transform}
+{\footnotesize\ttfamily Transform gl\+Tools\+::\+Model\+::transform}
+
+Transform que contiene las distintas transformaciones del modelo 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+code/headers/\textbf{ Model.\+hpp}\item 
+code/sources/\textbf{ Model.\+cpp}\end{DoxyCompactItemize}

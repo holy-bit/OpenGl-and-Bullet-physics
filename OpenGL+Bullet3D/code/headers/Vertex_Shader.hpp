@@ -17,7 +17,7 @@
 
     #include "Shader.hpp"
 
-    namespace example
+    namespace glTools
     {
 
         class Vertex_Shader : public Shader

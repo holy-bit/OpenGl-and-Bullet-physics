@@ -16,7 +16,7 @@
 #include <fstream>
 #include "Shader.hpp"
 
-namespace example
+namespace glTools
 {
 
     Shader::Source_Code Shader::Source_Code::from_file (const std::string & file_path)

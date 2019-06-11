@@ -1,0 +1,100 @@
+\section{gl\+Tools\+::Obj\+\_\+\+Loader Class Reference}
+\label{classgl_tools_1_1_obj___loader}\index{glTools::Obj\_Loader@{glTools::Obj\_Loader}}
+
+
+{\ttfamily \#include $<$Obj\+\_\+\+Loader.\+hpp$>$}
+
+Inheritance diagram for gl\+Tools\+::Obj\+\_\+\+Loader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgl_tools_1_1_obj___loader}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Obj\+\_\+\+Loader} (const std\+::string \&obj\+\_\+file\+\_\+path, const string \&texture\+\_\+path, glm\+::vec3 location=\{ 0, 0, 0 \}, glm\+::vec3 scale=\{ 1, 1, 1 \}, glm\+::vec3 rotation=\{ 0, 0, 0 \}, float \textbf{ mass}=0)
+\begin{DoxyCompactList}\small\item\em Constructor que carga mallas desde un archivo obj. \end{DoxyCompactList}\item 
+bool \textbf{ is\+\_\+ok} ()
+\begin{DoxyCompactList}\small\item\em Comprueba que la carga es correcta. \end{DoxyCompactList}\item 
+const std\+::string \textbf{ get\+\_\+error} () const
+\begin{DoxyCompactList}\small\item\em Devuelve el error que se ha producido. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{classgl_tools_1_1_obj___loader_a6e4da2d19a223a549a0db37090dc1bff}} 
+\index{glTools::Obj\_Loader@{glTools::Obj\_Loader}!Obj\_Loader@{Obj\_Loader}}
+\index{Obj\_Loader@{Obj\_Loader}!glTools::Obj\_Loader@{glTools::Obj\_Loader}}
+\subsubsection{Obj\_Loader()}
+{\footnotesize\ttfamily gl\+Tools\+::\+Obj\+\_\+\+Loader\+::\+Obj\+\_\+\+Loader (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{obj\+\_\+file\+\_\+path,  }\item[{const string \&}]{texture\+\_\+path,  }\item[{glm\+::vec3}]{location = {\ttfamily \{~0,0,0~\}},  }\item[{glm\+::vec3}]{scale = {\ttfamily \{~1,1,1~\}},  }\item[{glm\+::vec3}]{rotation = {\ttfamily \{~0,0,0~\}},  }\item[{float}]{mass = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Constructor que carga mallas desde un archivo obj. 
+
+{\bfseries{Method\+: }} \doxyref{Obj\+\_\+\+Loader}{p.}{classgl_tools_1_1_obj___loader}
+
+{\bfseries{Full\+Name\+:}} \doxyref{gl\+Tools\+::\+Obj\+\_\+\+Loader\+::\+Obj\+\_\+\+Loader}{p.}{classgl_tools_1_1_obj___loader_a6e4da2d19a223a549a0db37090dc1bff}
+
+{\bfseries{Access\+: }} public 
+\begin{DoxyParams}{Parameters}
+{\em const} & std\+::string \& obj\+\_\+file\+\_\+path Recibe el directorio del archivo a cargar. \\
+\hline
+{\em const} & string \& texture\+\_\+path \\
+\hline
+{\em glm\+::vec3} & location \\
+\hline
+{\em glm\+::vec3} & scale \\
+\hline
+{\em glm\+::vec3} & rotation \\
+\hline
+{\em float} & mass \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{classgl_tools_1_1_obj___loader_aff6dd07521527338cb19add206b768a2}} 
+\index{glTools::Obj\_Loader@{glTools::Obj\_Loader}!get\_error@{get\_error}}
+\index{get\_error@{get\_error}!glTools::Obj\_Loader@{glTools::Obj\_Loader}}
+\subsubsection{get\_error()}
+{\footnotesize\ttfamily const std\+::string gl\+Tools\+::\+Obj\+\_\+\+Loader\+::get\+\_\+error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Devuelve el error que se ha producido. 
+
+{\bfseries{Method\+: }} get\+\_\+error
+
+{\bfseries{Full\+Name\+:}} \doxyref{gl\+Tools\+::\+Obj\+\_\+\+Loader\+::get\+\_\+error}{p.}{classgl_tools_1_1_obj___loader_aff6dd07521527338cb19add206b768a2}
+
+{\bfseries{Access\+: }} public \begin{DoxyReturn}{Returns}
+const std\+::string 
+\end{DoxyReturn}
+\mbox{\label{classgl_tools_1_1_obj___loader_a60c6f4317775041a3ce1e9c597363051}} 
+\index{glTools::Obj\_Loader@{glTools::Obj\_Loader}!is\_ok@{is\_ok}}
+\index{is\_ok@{is\_ok}!glTools::Obj\_Loader@{glTools::Obj\_Loader}}
+\subsubsection{is\_ok()}
+{\footnotesize\ttfamily bool gl\+Tools\+::\+Obj\+\_\+\+Loader\+::is\+\_\+ok (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Comprueba que la carga es correcta. 
+
+{\bfseries{Method\+: }} is\+\_\+ok
+
+{\bfseries{Full\+Name\+:}} \doxyref{gl\+Tools\+::\+Obj\+\_\+\+Loader\+::is\+\_\+ok}{p.}{classgl_tools_1_1_obj___loader_a60c6f4317775041a3ce1e9c597363051}
+
+{\bfseries{Access\+: }} public \begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+code/headers/\textbf{ Obj\+\_\+\+Loader.\+hpp}\item 
+code/sources/\textbf{ Obj\+\_\+\+Loader.\+cpp}\end{DoxyCompactItemize}

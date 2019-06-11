@@ -1,0 +1,133 @@
+\section{example\+::Mesh Class Reference}
+\label{classexample_1_1_mesh}\index{example::Mesh@{example::Mesh}}
+
+
+{\ttfamily \#include $<$Mesh.\+hpp$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ Vertex}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Mesh} (vector$<$ \textbf{ Vertex} $>$ \textbf{ vertices}, vector$<$ unsigned int $>$ \textbf{ indices}, const string \&texture\+\_\+path)
+\item 
+void \textbf{ Draw} ()
+\item 
+void \textbf{ set\+\_\+\+Transform} (Transformation3f \&transformP)
+\item 
+void \textbf{ update} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \textbf{ Texture} $>$ \textbf{ load\+\_\+texture} (const std\+::string \&texture\+\_\+path)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \textbf{ Vertex} $>$ \textbf{ vertices}
+\item 
+vector$<$ unsigned int $>$ \textbf{ indices}
+\item 
+unsigned int \textbf{ V\+AO}
+\item 
+std\+::shared\+\_\+ptr$<$ \textbf{ Texture} $>$ \textbf{ texture}
+\item 
+bool \textbf{ has\+\_\+texture}
+\item 
+G\+Luint \textbf{ texture\+\_\+id}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{classexample_1_1_mesh_a213f5ebfb1aab636c83145d5b8cbcbea}} 
+\index{example::Mesh@{example::Mesh}!Mesh@{Mesh}}
+\index{Mesh@{Mesh}!example::Mesh@{example::Mesh}}
+\subsubsection{Mesh()}
+{\footnotesize\ttfamily example\+::\+Mesh\+::\+Mesh (\begin{DoxyParamCaption}\item[{vector$<$ \textbf{ Vertex} $>$}]{vertices,  }\item[{vector$<$ unsigned int $>$}]{indices,  }\item[{const string \&}]{texture\+\_\+path }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{classexample_1_1_mesh_a2b79e0b8b79bad1bafd868b2d356c737}} 
+\index{example::Mesh@{example::Mesh}!Draw@{Draw}}
+\index{Draw@{Draw}!example::Mesh@{example::Mesh}}
+\subsubsection{Draw()}
+{\footnotesize\ttfamily void example\+::\+Mesh\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\label{classexample_1_1_mesh_a298605e06889f405c8121d6668ca1250}} 
+\index{example::Mesh@{example::Mesh}!load\_texture@{load\_texture}}
+\index{load\_texture@{load\_texture}!example::Mesh@{example::Mesh}}
+\subsubsection{load\_texture()}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \textbf{ Texture} $>$ example\+::\+Mesh\+::load\+\_\+texture (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{texture\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classexample_1_1_mesh_afd5ab01be403efc3d1477dbc988ae4fb}} 
+\index{example::Mesh@{example::Mesh}!set\_Transform@{set\_Transform}}
+\index{set\_Transform@{set\_Transform}!example::Mesh@{example::Mesh}}
+\subsubsection{set\_Transform()}
+{\footnotesize\ttfamily void example\+::\+Mesh\+::set\+\_\+\+Transform (\begin{DoxyParamCaption}\item[{Transformation3f \&}]{transformP }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Inicializa y redimensiona los vectores de los distintos tipos de procesado de los vertices y la direccion de la luz. 
+\begin{DoxyParams}{Parameters}
+{\em Vertex\+\_\+\+Buffer} & vector con las posiciones de los vertices de la malla. \\
+\hline
+{\em Vertex\+\_\+\+Buffer} & normales de los vertices de la malla. \\
+\hline
+{\em Vertex\+\_\+\+Colors} & colores de los vertices de la malla.\+Guarda los indices de de los vertices. \\
+\hline
+{\em Index\+\_\+\+Buffer} & indices de los Vertex\+\_\+\+Buffer de vertices y normales.\+Guarda el transform que recibe. \\
+\hline
+{\em Transformation3f} & tranformacion de todas las matrices de position,rotacion y escala. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classexample_1_1_mesh_adacc0b0bc032d1b1320814594b4f0832}} 
+\index{example::Mesh@{example::Mesh}!update@{update}}
+\index{update@{update}!example::Mesh@{example::Mesh}}
+\subsubsection{update()}
+{\footnotesize\ttfamily void example\+::\+Mesh\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\label{classexample_1_1_mesh_af79e9705d0972b044d5b997d318271d7}} 
+\index{example::Mesh@{example::Mesh}!has\_texture@{has\_texture}}
+\index{has\_texture@{has\_texture}!example::Mesh@{example::Mesh}}
+\subsubsection{has\_texture}
+{\footnotesize\ttfamily bool example\+::\+Mesh\+::has\+\_\+texture}
+
+\mbox{\label{classexample_1_1_mesh_a2df64ef7da1d62b1cf6618f1d7d12073}} 
+\index{example::Mesh@{example::Mesh}!indices@{indices}}
+\index{indices@{indices}!example::Mesh@{example::Mesh}}
+\subsubsection{indices}
+{\footnotesize\ttfamily vector$<$unsigned int$>$ example\+::\+Mesh\+::indices}
+
+\mbox{\label{classexample_1_1_mesh_aaed6ea206d64d657ed86201474a3da68}} 
+\index{example::Mesh@{example::Mesh}!texture@{texture}}
+\index{texture@{texture}!example::Mesh@{example::Mesh}}
+\subsubsection{texture}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \textbf{ Texture} $>$ example\+::\+Mesh\+::texture}
+
+\mbox{\label{classexample_1_1_mesh_a1ad1b235b81b5474da3a82f9f78c9c8d}} 
+\index{example::Mesh@{example::Mesh}!texture\_id@{texture\_id}}
+\index{texture\_id@{texture\_id}!example::Mesh@{example::Mesh}}
+\subsubsection{texture\_id}
+{\footnotesize\ttfamily G\+Luint example\+::\+Mesh\+::texture\+\_\+id}
+
+\mbox{\label{classexample_1_1_mesh_ac92c034ccc6c26bf29aa89a0f69a6dbe}} 
+\index{example::Mesh@{example::Mesh}!VAO@{VAO}}
+\index{VAO@{VAO}!example::Mesh@{example::Mesh}}
+\subsubsection{VAO}
+{\footnotesize\ttfamily unsigned int example\+::\+Mesh\+::\+V\+AO}
+
+\mbox{\label{classexample_1_1_mesh_ac6b4c018daf446724540ebd0529c20a5}} 
+\index{example::Mesh@{example::Mesh}!vertices@{vertices}}
+\index{vertices@{vertices}!example::Mesh@{example::Mesh}}
+\subsubsection{vertices}
+{\footnotesize\ttfamily vector$<$\textbf{ Vertex}$>$ example\+::\+Mesh\+::vertices}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+code/headers/\textbf{ Mesh.\+hpp}\item 
+code/sources/\textbf{ Mesh.\+cpp}\end{DoxyCompactItemize}

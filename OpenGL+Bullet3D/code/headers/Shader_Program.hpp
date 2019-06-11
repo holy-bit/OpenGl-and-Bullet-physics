@@ -20,7 +20,7 @@
     #include <Vector.hpp>
     #include <Matrix.hpp>
 
-    namespace example
+    namespace glTools
     {
 
         using toolkit::Vector2f;
